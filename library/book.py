@@ -1,6 +1,6 @@
 # the book class
 class Book:
-    def __init__(self, title, author, year, genre,listed=False):
+    def __init__(self, title, author, year, genre, listed=False):
         self.title = title
         self.author = author
         self.year = year
@@ -8,12 +8,6 @@ class Book:
         self.listed = listed
 
     def display(self):
-
-        if self.listed == False:
-            listed_str="[ ]"
-        else:
-            listed_str="[v]"
-
         return {
             "Title": self.title,
             "Author": self.author,
@@ -33,7 +27,4 @@ class Book:
             self.genre = genre
 
     def mark_as_listed(self):
-        if self.listed:
-            print("This book is already listed!")
-        else:
-            self.listed = True
+        self.listed = True

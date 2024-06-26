@@ -6,6 +6,7 @@ class App:
     app = Flask(__name__)
 
 
+
     @staticmethod
     @app.route('/')
     def index():
@@ -14,7 +15,7 @@ class App:
     @staticmethod
     @app.route('/books')
     def list_books():
-        library=Library('library.json')
+        library = Library('library.json')
         books = library.list_books()
         return render_template('book_list.html', books=books)
 
@@ -27,7 +28,7 @@ class App:
             year = int(request.form['year'])
             genre = request.form['genre']
             new_book = Book(title, author, year, genre)  # Create a Book object
-            library=Library('library.json')
+            library = Library('library.json')
             library.add_book(new_book)  # Pass the Book object to add_book method
             return redirect(url_for('list_books'))
         return render_template('add_book.html')
@@ -36,13 +37,12 @@ class App:
     @staticmethod
     @app.route('/edit/<int:index>', methods=['GET', 'POST'])
     def edit_book(index):
-        library=Library('library.json')
+        library = Library('library.json')
         if request.method == 'POST':
             title = request.form['title']
             author = request.form['author']
             year = int(request.form['year'])
             genre = request.form['genre']
-
             library.edit_book(index, title, author, year, genre)
             return redirect(url_for('list_books'))
         book = library.books[index].display()
