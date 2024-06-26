@@ -1,0 +1,30 @@
+[
+    {
+        "Title": "You",
+        "Author": "Caroline Kepnes",
+        "Year": 2018,
+        "Genre": "Thriller",
+        "Listed": true
+    },
+    {
+        "Title": "Harry Potter",
+        "Author": "J.K. Roling",
+        "Year": 1995,
+        "Genre": "Magic",
+        "Listed": false
+    },
+    {
+        "Title": "The Hunger Games",
+        "Author": "Suzanne Collins",
+        "Year": 2008,
+        "Genre": "Fantasy",
+        "Listed": false
+    },
+    {
+        "Title": "Twilight ",
+        "Author": "Stephenie meyer",
+        "Year": 2008,
+        "Genre": "Vampires",
+        "Listed": false
+    }
+]
