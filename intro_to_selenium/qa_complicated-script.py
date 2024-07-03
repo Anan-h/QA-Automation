@@ -14,5 +14,4 @@ email=driver.find_element(By.ID,'et_pb_contact_email_0')
 email.send_keys('anan.hosien@gmail.com')
 msg=driver.find_element(By.ID,'et_pb_contact_message_0')
 msg.send_keys("Hello my name is anan")
-
 driver.quit()

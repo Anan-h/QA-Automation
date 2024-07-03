@@ -17,6 +17,7 @@ search_input.send_keys('Python programming')
 # pressing the return key on the keyboard
 search_input.send_keys(Keys.RETURN)
 
+
 # locating the element for the first search result
 # me
 # //a[@href='https://www.python.org/about/gettingstarted/']//h3[@class='LC20lb MBeuO DKV0Md']
