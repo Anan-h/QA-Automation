@@ -1,0 +1,16 @@
+{
+  "browser": "Chrome",
+  "url": "https://parabank.parasoft.com/parabank/index.htm",
+  "first_name" : "anan",
+  "last_name": "husein",
+  "address": "al-sinaa",
+  "city": "yarka",
+  "state": "north",
+  "zip_code": "2496700",
+  "phone": "0528769420",
+  "ssn": "11",
+  "user_name": "Anan_h1",
+  "password": "anan31",
+  "confirm": "anan31"
+
+}
