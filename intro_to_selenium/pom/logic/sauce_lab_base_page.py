@@ -19,7 +19,7 @@ class SauceLabBasePage(Page):
         self._twitter_logo = self._driver.find_element(By.XPATH, self.TWITTER_LOGO)
         self._facebook_logo = self._driver.find_element(By.XPATH, self.FACEBOOK_LOGO)
         self._linkedin_logo = self._driver.find_element(By.XPATH, self.LINKEDIN_LOGO)
-        self._count_of_items_in_cart = self._driver.find_element(By.XPATH, self.CART_BADGE)
+
 
     def get_title(self):
         return self._app_logo.text
@@ -39,5 +39,4 @@ class SauceLabBasePage(Page):
     def click_on_linkedin_icon(self):
         self._linkedin_logo.click()
 
-    def get_items_count_in_cart(self):
-        return self._count_of_items_in_cart.text
+

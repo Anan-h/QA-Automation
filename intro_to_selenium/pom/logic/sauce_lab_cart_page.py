@@ -15,15 +15,15 @@ class SauceLabCartPage(SauceLabBasePage):
 
     def __init__(self, driver):
         super().__init__(driver)
-        self._continue_btn = self._driver.find_elemnt(By.XPATH, self.CONTINUE_SHOPPING_BTN)
-        self._checkout_btn = self._driver.find_elemnt(By.XPATH, self.CHECKOUT_BTN)
-        self._items = self._driver.find_elements(By.XPATH, self.ITEM_SECTION_IN_CART)
-        self._remove_shirt_btn = self._driver.find_elemnt(By.XPATH, self.REMOVE_SHIRT_BTN)
-        self._remove_fleece_btn = self._driver.find_elemnt(By.XPATH, self.REMOVE_FLEECE_BTN)
-        self._remove_bike_light_btn = self._driver.find_elemnt(By.XPATH, self.REMOVE_BIKE_LIGHT_BTN)
-        self._remove_bag_btn = self._driver.find_elemnt(By.XPATH, self.REMOVE_BAG_BTN)
-        self._remove_onesie_btn = self._driver.find_elemnt(By.XPATH, self.REMOVE_ONESIE_BTN)
-        self._remove_red_shirt_btn = self._driver.find_elemnt(By.XPATH, self.REMOVE_RED_SHIRT_BTN)
+        self._continue_btn = self._driver.find_element(By.XPATH, self.CONTINUE_SHOPPING_BTN)
+        self._checkout_btn = self._driver.find_element(By.XPATH, self.CHECKOUT_BTN)
+        # self._items = self._driver.find_elements(By.XPATH, self.ITEM_SECTION_IN_CART)
+        self._remove_shirt_btn = self._driver.find_element(By.XPATH, self.REMOVE_SHIRT_BTN)
+        # self._remove_fleece_btn = self._driver.find_element(By.XPATH, self.REMOVE_FLEECE_BTN)
+        # self._remove_bike_light_btn = self._driver.find_element(By.XPATH, self.REMOVE_BIKE_LIGHT_BTN)
+        self._remove_bag_btn = self._driver.find_element(By.XPATH, self.REMOVE_BAG_BTN)
+        # self._remove_onesie_btn = self._driver.find_element(By.XPATH, self.REMOVE_ONESIE_BTN)
+        # self._remove_red_shirt_btn = self._driver.find_element(By.XPATH, self.REMOVE_RED_SHIRT_BTN)
 
     def click_on_continue_shopping(self):
         self._continue_btn.click()
@@ -32,22 +32,23 @@ class SauceLabCartPage(SauceLabBasePage):
         self._checkout_btn.click()
 
     def get_count_of_items(self):
-        return len(self._items)
+        items = self._driver.find_elements(By.XPATH, "//div[@class='cart_item']")
+        return len(items)
 
     def click_on_remove_shirt_btn(self):
         self._remove_shirt_btn.click()
 
-    def click_on_remove_fleece_btn(self):
-        self._remove_fleece_btn.click()
+    # def click_on_remove_fleece_btn(self):
+    #     self._remove_fleece_btn.click()
 
-    def click_on_remove_bike_light_btn(self):
-        self._remove_bike_light_btn.click()
-
+    # def click_on_remove_bike_light_btn(self):
+    #     self._remove_bike_light_btn.click()
+    #
     def click_on_remove_bag_btn(self):
         self._remove_bag_btn.click()
 
-    def click_on_remove_onesie_btn(self):
-        self._remove_onesie_btn.click()
-
-    def click_on_remove_red_shirt_btn(self):
-        self._remove_red_shirt_btn.click()
+    # def click_on_remove_onesie_btn(self):
+    #     self._remove_onesie_btn.click()
+    #
+    # def click_on_remove_red_shirt_btn(self):
+    #     self._remove_red_shirt_btn.click()

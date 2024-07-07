@@ -46,7 +46,6 @@ class SauceLabMainPage(SauceLabBasePage):
         self.add_shirt_to_cart()
         self.add_bike_light_to_cart()
 
-
     def adding_all_items_to_cart(self):
         self.add_shirt_to_cart()
         self.add_fleece_to_cart()
@@ -54,4 +53,3 @@ class SauceLabMainPage(SauceLabBasePage):
         self.add_red_shirt_to_cart()
         self.add_bike_light_to_cart()
         self.add_bag_to_cart()
-
