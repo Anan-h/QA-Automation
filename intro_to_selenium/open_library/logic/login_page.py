@@ -2,11 +2,10 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import *
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from intro_to_selenium.open_library.logic.base_app_page import BaseAppPage
 
-from intro_to_selenium.open_library.infra.base_page import BasePage
 
-
-class LoginPage(BasePage):
+class LoginPage(BaseAppPage):
     EMAIL_INPUT = "//input[@id='username']"
     PASSWORD_INPUT = "//input[@id='password']"
     LOG_IN_BUTTON = "//button[@name='login']"
@@ -34,6 +33,9 @@ class LoginPage(BasePage):
         self.fill_email_input(email)
         self.fill_password_input(password)
         self.click_on_login_button()
+
+    #after trying to log in through invalid data an error message shall appear
+    #these two functions interact with that message
 
     def error_msg_is_visible(self):
         try:
