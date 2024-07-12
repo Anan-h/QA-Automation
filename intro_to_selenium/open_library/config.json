@@ -2,6 +2,11 @@
   "browser": "Chrome",
   "url": "https://openlibrary.org",
   "email": "anan.hosien@gmail.com",
-  "name": "Anan_h",
-  "password": "Anan1212"
+  "name": "anan_h",
+  "password": "Anan31",
+  "invalid_login_msg": "No account was found with this email. Please try again",
+  "trending_all_time_url": "https://openlibrary.org/trending/forever",
+  "trending_all_time_title": "Trending Books: All Time",
+  "book_name": "Harry Potter",
+  "author_name": "J.K. Rowling"
 }

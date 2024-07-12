@@ -14,14 +14,11 @@ class TestInvalidLogIn(unittest.TestCase):
         self.main_page = MainPage(self.driver)
 
     def test_login_with_invalid_email(self):
-        #Arrange
         self.main_page.click_on_log_in_button()
         login_page = LoginPage(self.driver)
         email = LogicUtils.generate_random_email_address()
         password = LogicUtils.generate_password()
-        #Act
         login_page.login_flow(email, password)
-        #Assert
         msg = login_page.get_error_msg_text()
         self.assertTrue(login_page.error_msg_is_visible())
         self.assertEqual(msg, self.config["invalid_login_msg"])
