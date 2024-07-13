@@ -24,6 +24,7 @@ class TestAddingNoteToABook(unittest.TestCase):
         MainPage(self.driver).click_on_book_link_by_index()
         BookPage(self.driver).adding_note_flow(Utils.generate_string_of_letters(40))
         self.assertTrue(BookPage(self.driver).confirmation_message_appearance())
+        self.driver.save_screenshot('adding note confirmation.png')
 
     def tearDown(self):
         BookPage(self.driver).log_out()
