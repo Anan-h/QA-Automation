@@ -13,18 +13,14 @@ class TestBorrowingBook(unittest.TestCase):
 
     def setUp(self):
         self.driver = BrowserWrapper().get_driver(self.config["url"])
-        main_page = MainPage(self.driver)
-        main_page.click_on_log_in_button()
-        login_page = LoginPage(self.driver)
-        login_page.login_flow(self.config["email"], self.config["password"])
-        self.my_books_page = MyBooksPage(self.driver)
+        MainPage(self.driver).click_on_log_in_button()
+        LoginPage(self.driver).login_flow(self.config["email"], self.config["password"])
+        MyBooksPage(self.driver)
 
     def test_the_borrow_ending_message_visibility(self):
-        self.my_books_page.navigate_to_home_page()
-        home = MainPage(self.driver)
-        home.click_on_borrow_button_by_index()
-        self.borrow = BorrowPage(self.driver)
-        reader_is_visible = self.borrow.book_reader_is_visible()
+        MyBooksPage(self.driver).navigate_to_home_page()
+        MainPage(self.driver).click_on_borrow_button_by_index()
+        reader_is_visible = BorrowPage(self.driver).book_reader_is_visible()
         self.assertTrue(reader_is_visible)
 
     def tearDown(self):

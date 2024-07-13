@@ -10,17 +10,17 @@ class TestSearchFunction(unittest.TestCase):
 
     def setUp(self):
         self.driver = BrowserWrapper().get_driver(self.config["url"])
-        self.main_page = MainPage(self.driver)
+        MainPage(self.driver)
 
     def test_search_for_a_book(self):
-        self.main_page.search_flow(self.config["book_name"])
+        MainPage(self.driver).search_flow(self.config["book_name"])
         matching_results = SearchResultPage(self.driver).get_matching_results_for_book(self.config["book_name"])
         self.assertGreaterEqual(len(matching_results), 1)
 
     def test_search_for_an_author(self):
-        self.main_page.click_on_search_filter()
-        self.main_page.select_author()
-        self.main_page.search_flow(self.config["author_name"])
+        MainPage(self.driver).click_on_search_filter()
+        MainPage(self.driver).select_author()
+        MainPage(self.driver).search_flow(self.config["author_name"])
         author_search = SearchResultPage(self.driver).get_results_for_author_search()
         self.assertGreaterEqual(len(author_search), 1)
 

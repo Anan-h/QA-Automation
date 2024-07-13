@@ -14,25 +14,20 @@ class TestEditName(unittest.TestCase):
 
     def setUp(self):
         self.driver = BrowserWrapper().get_driver(self.config["url"])
-        main_page = MainPage(self.driver)
-        main_page.click_on_log_in_button()
-        login_page = LoginPage(self.driver)
-        login_page.login_flow(self.config["email"], self.config["password"])
-        self.my_books_page = MyBooksPage(self.driver)
+        MainPage(self.driver).click_on_log_in_button()
+        LoginPage(self.driver).login_flow(self.config["email"], self.config["password"])
+        MyBooksPage(self.driver)
 
     def test_editing_display_name(self):
         name = Utils.generate_string_of_letters(4)
-        self.my_books_page.navigate_to_my_profile_page()
-        my_profile = ProfilePage(self.driver)
-        my_profile.click_on_edit_button()
-        editing = ProfileEditingPage(self.driver)
-        editing.edit_name_flow(name)
-        self.new_profile = ProfilePage(self.driver)
-        new_name = self.new_profile.get_profile_name()
+        MyBooksPage(self.driver).navigate_to_my_profile_page()
+        ProfilePage(self.driver).click_on_edit_button()
+        ProfileEditingPage(self.driver).edit_name_flow(name)
+        new_name = ProfilePage(self.driver).get_profile_name()
         self.assertEqual(name, new_name)
 
     def tearDown(self):
-        self.new_profile.click_on_edit_button()
+        ProfilePage(self.driver).click_on_edit_button()
         ProfileEditingPage(self.driver).edit_name_flow(self.config["name"])
         ProfilePage(self.driver).log_out()
         self.driver.quit()

@@ -11,15 +11,14 @@ class TestBrowsing(unittest.TestCase):
 
     def setUp(self):
         self.driver = BrowserWrapper().get_driver(self.config["url"])
-        self.main_page = MainPage(self.driver)
-        self.main_page.click_on_browse_button()
+        MainPage(self.driver).click_on_browse_button()
 
     def test_show_a_random_book(self):
-        self.main_page.click_on_random_book()
+        MainPage(self.driver).click_on_random_book()
         self.assertTrue(BookPage(self.driver).book_title_is_visible())
 
     def test_show_trending_all_time_books(self):
-        self.main_page.click_on_trending_button()
+        MainPage(self.driver).click_on_trending_button()
         TrendingPage(self.driver).click_on_all_time_trending_button()
         self.assertEqual(self.driver.current_url, self.config["trending_all_time_url"])
         self.assertEqual(TrendingPage(self.driver).get_title_text(), self.config["trending_all_time_title"])

@@ -13,14 +13,12 @@ class TestAddingNoteToABook(unittest.TestCase):
 
     def setUp(self):
         self.driver = BrowserWrapper().get_driver(self.config["url"])
-        main_page = MainPage(self.driver)
-        main_page.click_on_log_in_button()
-        login_page = LoginPage(self.driver)
-        login_page.login_flow(self.config["email"], self.config["password"])
-        self.my_books_page = MyBooksPage(self.driver)
+        MainPage(self.driver).click_on_log_in_button()
+        LoginPage(self.driver).login_flow(self.config["email"], self.config["password"])
+        MyBooksPage(self.driver)
 
     def test_adding_note_to_a_book(self):
-        self.my_books_page.navigate_to_home_page()
+        MyBooksPage(self.driver).navigate_to_home_page()
         MainPage(self.driver).click_on_book_link_by_index()
         BookPage(self.driver).adding_note_flow(Utils.generate_string_of_letters(40))
         self.assertTrue(BookPage(self.driver).confirmation_message_appearance())

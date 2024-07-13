@@ -12,14 +12,12 @@ class TestRatingBook(unittest.TestCase):
 
     def setUp(self):
         self.driver = BrowserWrapper().get_driver(self.config["url"])
-        main_page = MainPage(self.driver)
-        main_page.click_on_log_in_button()
-        login_page = LoginPage(self.driver)
-        login_page.login_flow(self.config["email"], self.config["password"])
-        self.my_books_page = MyBooksPage(self.driver)
+        MainPage(self.driver).click_on_log_in_button()
+        LoginPage(self.driver).login_flow(self.config["email"], self.config["password"])
+        MyBooksPage(self.driver)
 
     def test_rating_a_book_at_top_rating(self):
-        self.my_books_page.navigate_to_home_page()
+        MyBooksPage(self.driver).navigate_to_home_page()
         MainPage(self.driver).click_on_book_link_by_index()
         BookPage(self.driver).rate_as_top_rating()
         btn_is_visible = BookPage(self.driver).clear_rating_button_is_visible()

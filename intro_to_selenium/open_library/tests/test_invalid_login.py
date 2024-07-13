@@ -11,16 +11,16 @@ class TestInvalidLogIn(unittest.TestCase):
 
     def setUp(self):
         self.driver = BrowserWrapper().get_driver(self.config["url"])
-        self.main_page = MainPage(self.driver)
+        MainPage(self.driver)
 
     def test_login_with_invalid_email(self):
-        self.main_page.click_on_log_in_button()
-        login_page = LoginPage(self.driver)
+        MainPage(self.driver).click_on_log_in_button()
+        LoginPage(self.driver)
         email = LogicUtils.generate_random_email_address()
         password = LogicUtils.generate_password()
-        login_page.login_flow(email, password)
-        msg = login_page.get_error_msg_text()
-        self.assertTrue(login_page.error_msg_is_visible())
+        LoginPage(self.driver).login_flow(email, password)
+        msg = LoginPage(self.driver).get_error_msg_text()
+        self.assertTrue(LoginPage(self.driver).error_msg_is_visible())
         self.assertEqual(msg, self.config["invalid_login_msg"])
 
     def tearDown(self):
