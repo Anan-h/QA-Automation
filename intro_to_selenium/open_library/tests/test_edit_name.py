@@ -32,7 +32,6 @@ class TestEditName(unittest.TestCase):
         self.assertEqual(name, new_name)
 
     def tearDown(self):
-        #undo the changing of the name
         self.new_profile.click_on_edit_button()
         ProfileEditingPage(self.driver).edit_name_flow(self.config["name"])
         ProfilePage(self.driver).log_out()

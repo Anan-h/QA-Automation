@@ -23,7 +23,6 @@ class TestValidLogIn(unittest.TestCase):
         self.assertIn(self.config["name"], name)
 
     def tearDown(self):
-        my_books_page = MyBooksPage(self.driver)
-        my_books_page.log_out()
+        MyBooksPage(self.driver).log_out()
         self.driver.quit()
 
