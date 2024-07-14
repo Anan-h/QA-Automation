@@ -1,3 +1,4 @@
+import logging
 import unittest
 from intro_to_selenium.open_library.infra.browser_wrapper import BrowserWrapper
 from intro_to_selenium.open_library.infra.config_provider import ConfigProvider
@@ -12,11 +13,14 @@ class TestRatingBook(unittest.TestCase):
 
     def setUp(self):
         self.driver = BrowserWrapper().get_driver(self.config["url"])
+        logging.info("launched the Open Library website ")
         MainPage(self.driver).click_on_log_in_button()
         LoginPage(self.driver).login_flow(self.config["email"], self.config["password"])
         MyBooksPage(self.driver)
 
     def test_rating_a_book_at_top_rating(self):
+        logging.info("testing rating a book as best rating")
+        logging.info("###########################################")
         MyBooksPage(self.driver).navigate_to_home_page()
         MainPage(self.driver).click_on_book_link_by_index()
         BookPage(self.driver).rate_as_top_rating()
@@ -27,3 +31,4 @@ class TestRatingBook(unittest.TestCase):
         BookPage(self.driver).click_on_clear_rating_button()
         BookPage(self.driver).log_out()
         self.driver.quit()
+        logging.info("______________________________________________")

@@ -1,3 +1,4 @@
+import logging
 import unittest
 from intro_to_selenium.open_library.infra.browser_wrapper import BrowserWrapper
 from intro_to_selenium.open_library.infra.config_provider import ConfigProvider
@@ -11,9 +12,12 @@ class TestInvalidLogIn(unittest.TestCase):
 
     def setUp(self):
         self.driver = BrowserWrapper().get_driver(self.config["url"])
+        logging.info("launched the Open Library website ")
         MainPage(self.driver)
 
     def test_login_with_invalid_email(self):
+        logging.info("testing login with invalid email address")
+        logging.info("###########################################")
         MainPage(self.driver).click_on_log_in_button()
         LoginPage(self.driver)
         email = LogicUtils.generate_random_email_address()
@@ -25,3 +29,4 @@ class TestInvalidLogIn(unittest.TestCase):
 
     def tearDown(self):
         self.driver.quit()
+        logging.info("______________________________________________")

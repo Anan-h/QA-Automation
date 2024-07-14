@@ -1,3 +1,5 @@
+import logging
+
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import *
 from intro_to_selenium.open_library.logic.base_app_page import BaseAppPage
@@ -13,7 +15,7 @@ class ProfilePage(BaseAppPage):
             self._edit_button = self._driver.find_element(By.XPATH, self.EDIT_BUTTON)
             self._name = self._driver.find_element(By.XPATH, self.PROFILE_NAME)
         except NoSuchElementException as e:
-            print(e)
+            logging.error(e)
 
     def click_on_edit_button(self):
         """
@@ -21,10 +23,12 @@ class ProfilePage(BaseAppPage):
         :return:
         """
         self._edit_button.click()
+        logging.info("clicked on edit button")
 
     def get_profile_name(self):
         """
         This function extracts the name of the account
         :return:the name
         """
+        logging.info(f"the current name is: {self._name.text}")
         return self._name.text

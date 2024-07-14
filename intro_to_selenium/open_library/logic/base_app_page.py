@@ -1,3 +1,5 @@
+import logging
+
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import *
 from selenium.webdriver.support.select import Select
@@ -30,7 +32,7 @@ class BaseAppPage(BasePage):
             self._search_filter = self._driver.find_element(By.XPATH, self.SEARCH_FILTER)
             self._search_icon = self._driver.find_element(By.XPATH, self.SEARCH_ICON)
         except NoSuchElementException as e:
-            print(e)
+            logging.error(e)
 
     def navigate_to_home_page(self):
         """
@@ -38,6 +40,7 @@ class BaseAppPage(BasePage):
         :return:
         """
         self._logo.click()
+        logging.info("navigated to home page")
 
     def navigate_to_my_books_page(self):
         """
@@ -45,6 +48,7 @@ class BaseAppPage(BasePage):
         :return:
         """
         self._my_books_link.click()
+        logging.info("navigated to my books page")
 
     def fill_search_input(self, text):
         """
@@ -53,6 +57,7 @@ class BaseAppPage(BasePage):
         :return:
         """
         self._search_input.send_keys(text)
+        logging.info(f"searched for {text}")
 
     def click_on_browse_button(self):
         """
@@ -60,6 +65,7 @@ class BaseAppPage(BasePage):
         :return:
         """
         self._browse_button.click()
+        logging.info("clicked on browse button")
 
     def click_on_random_book(self):
         """
@@ -71,8 +77,9 @@ class BaseAppPage(BasePage):
                 EC.presence_of_element_located((By.XPATH, self.RANDOM_BOOK_BUTTON))
             )
             random_book.click()
+            logging.info("clicked on random book button")
         except TimeoutException as e:
-            print(e)
+            logging.error(e)
 
     def click_on_log_in_button(self):
         """
@@ -82,8 +89,9 @@ class BaseAppPage(BasePage):
         try:
             log_in = self._driver.find_element(By.XPATH, self.LOG_IN_BUTTON)
             log_in.click()
+            logging.info("clicked on login button")
         except NoSuchElementException as e:
-            print(e)
+            logging.error(e)
 
     def click_on_profile_icon(self):
         """
@@ -93,8 +101,9 @@ class BaseAppPage(BasePage):
         try:
             profile = self._driver.find_element(By.XPATH, self.LOGGED_IN_IMG)
             profile.click()
+            logging.info("clicked on profile icon")
         except NoSuchElementException as e:
-            print(e)
+            logging.error(e)
 
     def click_on_search_filter(self):
         """
@@ -102,6 +111,7 @@ class BaseAppPage(BasePage):
         :return:
         """
         self._search_filter.click()
+        logging.info("clicked on search filter")
 
     def click_on_search_icon(self):
         """
@@ -109,6 +119,7 @@ class BaseAppPage(BasePage):
         :return:
         """
         self._search_icon.click()
+        logging.info("clicked on search icon")
 
     def search_flow(self, text):
         """
@@ -127,8 +138,9 @@ class BaseAppPage(BasePage):
         try:
             log_out = self._driver.find_element(By.XPATH, self.LOG_OUT_BUTTON)
             log_out.click()
+            logging.info("clicked on logout button")
         except NoSuchElementException as e:
-            print(e)
+            logging.error(e)
 
     def log_out(self):
         """
@@ -149,8 +161,9 @@ class BaseAppPage(BasePage):
                 EC.visibility_of_element_located((By.XPATH, self.MY_PROFILE_LINK))
             )
             my_profile.click()
+            logging.info("navigated to my profile page ")
         except TimeoutException as e:
-            print(e)
+            logging.error(e)
 
     def click_on_trending_button(self):
         """
@@ -162,8 +175,9 @@ class BaseAppPage(BasePage):
                 EC.presence_of_element_located((By.XPATH, self.TRENDING_BUTTON))
             )
             trending.click()
+            logging.info("clicked on trending button")
         except TimeoutException as e:
-            print(e)
+            logging.error(e)
 
     def select_author(self):
         """
@@ -172,3 +186,4 @@ class BaseAppPage(BasePage):
         """
         select = Select(self._search_filter)
         select.select_by_value('author')
+        logging.info("selected the author option from search filter")

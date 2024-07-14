@@ -1,3 +1,5 @@
+import logging
+
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import *
 from selenium.webdriver.support.wait import WebDriverWait
@@ -24,9 +26,10 @@ class SearchResultPage(BaseAppPage):
             self._results_books_titles = WebDriverWait(self._driver, 10).until(
                 EC.visibility_of_any_elements_located((By.XPATH, f"//a[contains(text(),'{title}')]"))
             )
+            logging.info(f"got all the results matching {title}")
             return self._results_books_titles
         except TimeoutException as e:
-            print(e)
+            logging.error(e)
 
     def click_on_book_title_by_index(self, title, index=0):
         """
@@ -39,8 +42,9 @@ class SearchResultPage(BaseAppPage):
         results = self.get_matching_results_for_book(title)
         try:
             results[index].click()
+            logging.info(f"clicked on the book located at index: {index}")
         except IndexError as e:
-            print(e)
+            logging.error(e)
 
     def get_results_for_author_search(self):
         """
@@ -51,6 +55,7 @@ class SearchResultPage(BaseAppPage):
             self._results_for_author = WebDriverWait(self._driver, 10).until(
                 EC.visibility_of_any_elements_located((By.XPATH, self.AUTHOR_SEARCH_RESULTS))
             )
+            logging.info("extracted the author search results")
             return self._results_for_author
         except TimeoutException as e:
-            print(e)
+            logging.error(e)

@@ -1,3 +1,5 @@
+import logging
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -21,7 +23,7 @@ class TrendingPage(BaseAppPage):
             )
             self._trending_books = []
         except TimeoutException as e:
-            print(e)
+            logging.error(e)
 
     def click_on_all_time_trending_button(self):
         """
@@ -29,12 +31,17 @@ class TrendingPage(BaseAppPage):
         :return:
         """
         self._all_time_button.click()
+        logging.info("clicked on all-time button")
 
     def title_is_visible(self):
         """
         This function checks if the title of the page is shown on the screen
         :return:True/False
         """
+        if self._trending_title.is_displayed():
+            logging.info("the title for the all-time trending books was displayed")
+        else:
+            logging.warning("the title for the all-time trending books was not displayed")
         return self._trending_title.is_displayed()
 
     def get_title_text(self):
@@ -42,6 +49,7 @@ class TrendingPage(BaseAppPage):
         This function extracts the title of the page
         :return:the title as text
         """
+        logging.info(f"the title is: {self._trending_title.text}")
         return self._trending_title.text
 
     def get_trending_books_titles(self):
@@ -53,6 +61,7 @@ class TrendingPage(BaseAppPage):
             self._trending_books = WebDriverWait(self._driver, 10).until(
                 EC.visibility_of_any_elements_located((By.XPATH, self.TRENDING_BOOKS_TITLES))
             )
+            logging.info("extracted all the books title that are trending")
             return self._trending_books
         except TimeoutException as e:
-            print(e)
+            logging.error(e)

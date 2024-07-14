@@ -1,3 +1,5 @@
+import logging
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.common.exceptions import *
@@ -15,11 +17,12 @@ class MyBooksPage(BaseAppPage):
                 EC.visibility_of_element_located((By.XPATH, self.USER_NAME_TITLE)))
 
         except NoSuchElementException as e:
-            print(e)
+            logging.error(e)
 
     def get_user_name(self):
         """
         This function extracts the display name of the account
         :return: name of the user as string
         """
+        logging.info(f"the user name is:{self._user_name.text}")
         return self._user_name.text

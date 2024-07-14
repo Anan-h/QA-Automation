@@ -1,4 +1,4 @@
-import random
+import logging
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -22,7 +22,7 @@ class MainPage(BaseAppPage):
                 EC.visibility_of_any_elements_located((By.XPATH, self.BOOK_LINK))
             )
         except NoSuchElementException as e:
-            print(e)
+            logging.error(e)
 
     def click_on_borrow_button_by_index(self, index=0):
         """
@@ -32,6 +32,7 @@ class MainPage(BaseAppPage):
         :return:
         """
         self._borrow_buttons[index].click()
+        logging.info(f"clicked on the borrow button located at the index:{index}")
 
     def click_on_book_link_by_index(self, index=0):
         """
@@ -41,3 +42,4 @@ class MainPage(BaseAppPage):
         :return:
         """
         self._books_links[index].click()
+        logging.info(f"clicked on the book link located at the index:{index}")

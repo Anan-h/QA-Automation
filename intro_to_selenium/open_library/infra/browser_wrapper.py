@@ -1,3 +1,5 @@
+import logging
+
 from selenium import webdriver
 from intro_to_selenium.open_library.infra.config_provider import ConfigProvider
 
@@ -10,7 +12,7 @@ class BrowserWrapper:
     def __init__(self):
         self.driver = None
         self.config = ConfigProvider.load_from_file('../config.json')
-        print("Test Start")
+        print("TEST START")
 
     def get_driver(self, url):
         """
@@ -28,4 +30,6 @@ class BrowserWrapper:
 
         self._driver.get(url)
         self._driver.maximize_window()
+        logging.info(f"opening {self.config["browser"]} browser")
+
         return self._driver
