@@ -1,6 +1,5 @@
-
-import unittest,logging
-
+import unittest
+import logging
 from intro_to_selenium.open_library.infra.browser_wrapper import BrowserWrapper
 from intro_to_selenium.open_library.infra.config_provider import ConfigProvider
 from intro_to_selenium.open_library.logic.borrow_page import BorrowPage
@@ -24,8 +23,7 @@ class TestBorrowingBook(unittest.TestCase):
         logging.info("###########################################")
         MyBooksPage(self.driver).navigate_to_home_page()
         MainPage(self.driver).click_on_first_borrow_button()
-        reader_is_visible = BorrowPage(self.driver).book_reader_is_visible()
-        self.assertTrue(reader_is_visible)
+        self.assertTrue(BorrowPage(self.driver).book_reader_is_visible())
 
     def tearDown(self):
         self.driver.back()

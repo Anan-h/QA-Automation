@@ -1,193 +1,36 @@
-2024-07-14 11:01:53,743: INFO: opening Edge browser 
-2024-07-14 11:01:53,744: INFO: launched the Open Library website  
-2024-07-14 11:02:01,043: INFO: clicked on login button 
-2024-07-14 11:02:01,425: INFO: anan.hosien@gmail.com inserted in email input bar 
-2024-07-14 11:02:01,540: INFO: Anan31 inserted in password input bar 
-2024-07-14 11:02:04,714: INFO: clicked on login button 
-2024-07-14 11:02:04,832: INFO: testing adding note to a book 
-2024-07-14 11:02:04,832: INFO: ########################################### 
-2024-07-14 11:02:05,972: INFO: navigated to home page 
-2024-07-14 11:02:13,811: INFO: clicked on the book link located at the index:0 
-2024-07-14 11:02:13,999: INFO: clicked on notes button 
-2024-07-14 11:02:14,603: INFO: cleared notes text area 
-2024-07-14 11:02:14,774: INFO: PjjifLRvlZdEvxnQeSzaLAZgtvSAzPiOcaVrmdqr inserted into notes text area 
-2024-07-14 11:02:14,832: INFO: clicked on save button 
-2024-07-14 11:02:15,423: INFO: the adding note confirmation message was displayed 
-2024-07-14 11:02:15,699: INFO: clicked on profile icon 
-2024-07-14 11:02:17,374: INFO: clicked on logout button 
-2024-07-14 11:02:19,733: INFO: ______________________________________________ 
-2024-07-14 11:02:45,992: INFO: opening Edge browser 
-2024-07-14 11:02:45,992: INFO: launched the Open Library website  
-2024-07-14 11:02:53,963: INFO: clicked on login button 
-2024-07-14 11:02:54,271: INFO: anan.hosien@gmail.com inserted in email input bar 
-2024-07-14 11:02:54,359: INFO: Anan31 inserted in password input bar 
-2024-07-14 11:02:57,327: INFO: clicked on login button 
-2024-07-14 11:02:57,440: INFO: testing the borrow book function 
-2024-07-14 11:02:57,440: INFO: ########################################### 
-2024-07-14 11:02:58,388: INFO: navigated to home page 
-2024-07-14 11:03:14,939: INFO: clicked on the borrow button located at the index:0 
-2024-07-14 11:03:16,581: INFO: the book reader was displayed 
-2024-07-14 11:03:18,070: INFO: clicked on profile icon 
-2024-07-14 11:03:19,093: INFO: clicked on logout button 
-2024-07-14 11:03:21,436: INFO: ______________________________________________ 
-2024-07-14 11:03:46,034: INFO: opening Edge browser 
-2024-07-14 11:03:46,034: INFO: launched the Open Library website  
-2024-07-14 11:03:52,648: INFO: clicked on browse button 
-2024-07-14 11:03:52,649: INFO: testing the view of a random book  
-2024-07-14 11:03:52,649: INFO: ########################################### 
-2024-07-14 11:04:01,575: INFO: clicked on random book button 
-2024-07-14 11:04:01,728: INFO: the book title was displayed 
-2024-07-14 11:04:01,745: INFO: ______________________________________________ 
-2024-07-14 11:04:11,802: INFO: opening Edge browser 
-2024-07-14 11:04:11,802: INFO: launched the Open Library website  
-2024-07-14 11:04:16,716: INFO: clicked on browse button 
-2024-07-14 11:04:16,716: INFO: testing the view of all-time trending books 
-2024-07-14 11:04:16,716: INFO: ########################################### 
-2024-07-14 11:04:32,452: INFO: clicked on trending button 
-2024-07-14 11:04:35,650: INFO: clicked on all-time button 
-2024-07-14 11:04:35,792: INFO: the title is: Trending Books: All Time 
-2024-07-14 11:04:35,800: INFO: ______________________________________________ 
-2024-07-14 11:05:25,925: INFO: opening Edge browser 
-2024-07-14 11:05:25,925: INFO: launched the Open Library website  
-2024-07-14 11:05:30,788: INFO: clicked on login button 
-2024-07-14 11:05:31,004: INFO: anan.hosien@gmail.com inserted in email input bar 
-2024-07-14 11:05:31,076: INFO: Anan31 inserted in password input bar 
-2024-07-14 11:05:34,823: INFO: clicked on login button 
-2024-07-14 11:05:34,919: INFO: testing the editing of the display name  
-2024-07-14 11:05:34,920: INFO: ########################################### 
-2024-07-14 11:05:35,065: INFO: clicked on profile icon 
-2024-07-14 11:05:36,153: INFO: navigated to my profile page  
-2024-07-14 11:05:38,151: INFO: clicked on edit button 
-2024-07-14 11:05:38,336: INFO: cleared the existent name 
-2024-07-14 11:05:38,425: INFO: QJdH inserted instead 
-2024-07-14 11:05:40,618: INFO: clicked on save button 
-2024-07-14 11:05:41,205: INFO: the current name is: QJdH 
-2024-07-14 11:05:42,229: INFO: clicked on edit button 
-2024-07-14 11:05:42,491: INFO: cleared the existent name 
-2024-07-14 11:05:42,625: INFO: anan_h inserted instead 
-2024-07-14 11:05:43,952: INFO: clicked on save button 
-2024-07-14 11:05:44,136: INFO: clicked on profile icon 
-2024-07-14 11:05:45,086: INFO: clicked on logout button 
-2024-07-14 11:05:47,733: INFO: ______________________________________________ 
-2024-07-14 11:07:01,740: INFO: opening Chrome browser 
-2024-07-14 11:07:01,741: INFO: launched the Open Library website  
-2024-07-14 11:07:03,097: INFO: testing login with invalid email address 
-2024-07-14 11:07:03,097: INFO: ########################################### 
-2024-07-14 11:07:08,304: INFO: clicked on login button 
-2024-07-14 11:07:08,932: INFO: ssnuhF@gmail.com inserted in email input bar 
-2024-07-14 11:07:09,145: INFO: IUgOKB1P61 inserted in password input bar 
-2024-07-14 11:07:10,706: INFO: clicked on login button 
-2024-07-14 11:07:10,878: INFO: the message content is:No account was found with this email. Please try again 
-2024-07-14 11:07:11,035: INFO: error message was displayed  
-2024-07-14 11:07:13,422: INFO: ______________________________________________ 
-2024-07-14 11:07:22,660: INFO: opening Chrome browser 
-2024-07-14 11:07:22,661: INFO: launched the Open Library website  
-2024-07-14 11:07:29,187: INFO: clicked on login button 
-2024-07-14 11:07:29,407: INFO: anan.hosien@gmail.com inserted in email input bar 
-2024-07-14 11:07:29,488: INFO: Anan31 inserted in password input bar 
-2024-07-14 11:07:32,091: INFO: clicked on login button 
-2024-07-14 11:07:32,232: INFO: testing rating a book as best rating 
-2024-07-14 11:07:32,233: INFO: ########################################### 
-2024-07-14 11:07:33,254: INFO: navigated to home page 
-2024-07-14 11:07:40,852: INFO: clicked on the book link located at the index:0 
-2024-07-14 11:07:41,028: INFO: rated as best rating  
-2024-07-14 11:07:41,679: INFO: the clear rating button was displayed 
-2024-07-14 11:07:41,816: INFO: clicked on the clear rating button 
-2024-07-14 11:07:42,015: INFO: clicked on profile icon 
-2024-07-14 11:07:43,542: INFO: clicked on logout button 
-2024-07-14 11:07:46,827: INFO: ______________________________________________ 
-2024-07-14 11:08:04,468: INFO: opening Chrome browser 
-2024-07-14 11:08:04,468: INFO: launched the Open Library website  
-2024-07-14 11:08:07,081: INFO: testing searching for a book 
-2024-07-14 11:08:07,082: INFO: ########################################### 
-2024-07-14 11:08:10,357: INFO: searched for Harry Potter 
-2024-07-14 11:08:19,221: INFO: clicked on search icon 
-2024-07-14 11:08:19,596: INFO: got all the results matching Harry Potter 
-2024-07-14 11:08:21,973: INFO: ______________________________________________ 
-2024-07-14 11:08:34,105: INFO: opening Chrome browser 
-2024-07-14 11:08:34,105: INFO: launched the Open Library website  
-2024-07-14 11:08:35,793: INFO: testing searching for an autor 
-2024-07-14 11:08:35,793: INFO: ########################################### 
-2024-07-14 11:08:38,251: INFO: clicked on search filter 
-2024-07-14 11:08:42,299: INFO: selected the author option from search filter 
-2024-07-14 11:08:45,556: INFO: searched for J.K. Rowling 
-2024-07-14 11:08:46,644: INFO: clicked on search icon 
-2024-07-14 11:08:46,789: INFO: extracted the author search results 
-2024-07-14 11:08:49,122: INFO: ______________________________________________ 
-2024-07-14 11:09:03,687: INFO: opening Chrome browser 
-2024-07-14 11:09:03,688: INFO: launched the Open Library website  
-2024-07-14 11:09:06,026: INFO: testing login with valid account data 
-2024-07-14 11:09:06,026: INFO: ########################################### 
-2024-07-14 11:09:12,637: INFO: clicked on login button 
-2024-07-14 11:09:12,991: INFO: anan.hosien@gmail.com inserted in email input bar 
-2024-07-14 11:09:13,182: INFO: Anan31 inserted in password input bar 
-2024-07-14 11:09:16,323: INFO: clicked on login button 
-2024-07-14 11:09:16,518: INFO: the user name is:anan_h › 
-2024-07-14 11:09:16,822: INFO: clicked on profile icon 
-2024-07-14 11:09:18,188: INFO: clicked on logout button 
-2024-07-14 11:09:20,669: INFO: ______________________________________________ 
-2024-07-15 09:22:40,402: INFO: opening Edge browser 
-2024-07-15 09:22:40,405: INFO: launched the Open Library website  
-2024-07-15 09:22:47,913: INFO: testing login with invalid email address 
-2024-07-15 09:22:47,915: INFO: ########################################### 
-2024-07-15 09:23:05,524: INFO: clicked on login button 
-2024-07-15 09:23:06,918: INFO: lSEqlq@gmail.com inserted in email input bar 
-2024-07-15 09:23:07,188: INFO: dWZ5SsyfKM inserted in password input bar 
-2024-07-15 09:23:08,908: INFO: clicked on login button 
-2024-07-15 09:23:09,380: INFO: the message content is:No account was found with this email. Please try again 
-2024-07-15 09:23:09,828: INFO: error message was displayed  
-2024-07-15 09:23:14,017: INFO: ______________________________________________ 
-2024-07-15 09:24:25,642: INFO: opening Edge browser 
-2024-07-15 09:24:25,644: INFO: launched the Open Library website  
-2024-07-15 09:24:37,266: INFO: clicked on login button 
-2024-07-15 09:24:37,844: INFO: anan.hosien@gmail.com inserted in email input bar 
-2024-07-15 09:24:38,013: INFO: Anan31 inserted in password input bar 
-2024-07-15 09:24:41,310: INFO: clicked on login button 
-2024-07-15 09:24:41,428: INFO: testing the borrow book function 
-2024-07-15 09:24:41,428: INFO: ########################################### 
-2024-07-15 09:24:42,737: INFO: navigated to home page 
-2024-07-15 09:24:53,965: INFO: clicked on the borrow button located at the index:0 
-2024-07-15 09:24:56,676: INFO: the book reader was displayed 
-2024-07-15 09:25:00,944: INFO: clicked on profile icon 
-2024-07-15 09:25:02,010: INFO: clicked on logout button 
-2024-07-15 09:25:04,498: INFO: ______________________________________________ 
-2024-07-15 09:46:38,256: INFO: opening Chrome browser 
-2024-07-15 09:46:38,256: INFO: launched the Open Library website  
-2024-07-15 09:46:47,396: INFO: clicked on login button 
-2024-07-15 09:46:47,957: INFO: anan.hosien@gmail.com inserted in email input bar 
-2024-07-15 09:46:48,159: INFO: Anan31 inserted in password input bar 
-2024-07-15 09:46:51,836: INFO: clicked on login button 
-2024-07-15 09:46:51,969: INFO: testing the borrow book function 
-2024-07-15 09:46:51,970: INFO: ########################################### 
-2024-07-15 09:46:53,225: INFO: navigated to home page 
-2024-07-15 09:47:02,614: INFO: clicked on the borrow button located at the index:0 
-2024-07-15 09:47:04,231: INFO: the book reader was displayed 
-2024-07-15 09:47:07,890: INFO: clicked on profile icon 
-2024-07-15 09:47:08,971: INFO: clicked on logout button 
-2024-07-15 09:47:11,375: INFO: ______________________________________________ 
-2024-07-15 09:47:25,037: INFO: opening Chrome browser 
-2024-07-15 09:47:25,037: INFO: launched the Open Library website  
-2024-07-15 09:47:33,614: INFO: clicked on login button 
-2024-07-15 09:47:34,547: INFO: anan.hosien@gmail.com inserted in email input bar 
-2024-07-15 09:47:34,832: INFO: Anan31 inserted in password input bar 
-2024-07-15 09:47:37,933: INFO: clicked on login button 
-2024-07-15 09:47:38,080: INFO: testing the borrow book function 
-2024-07-15 09:47:38,081: INFO: ########################################### 
-2024-07-15 09:47:39,145: INFO: navigated to home page 
-2024-07-15 09:47:48,176: INFO: clicked on the borrow button located at the index:0 
-2024-07-15 09:47:49,289: INFO: the book reader was displayed 
-2024-07-15 09:47:54,256: INFO: clicked on profile icon 
-2024-07-15 09:47:55,204: INFO: clicked on logout button 
-2024-07-15 09:47:57,688: INFO: ______________________________________________ 
-2024-07-15 10:45:55,547: INFO: opening Chrome browser 
-2024-07-15 10:45:55,548: INFO: launched the Open Library website  
-2024-07-15 10:46:00,929: INFO: clicked on login button 
-2024-07-15 10:46:01,284: INFO: anan.hosien@gmail.com inserted in email input bar 
-2024-07-15 10:46:01,409: INFO: Anan31 inserted in password input bar 
-2024-07-15 10:46:04,508: INFO: clicked on login button 
-2024-07-15 10:46:04,634: INFO: testing the borrow book function 
-2024-07-15 10:46:04,634: INFO: ########################################### 
-2024-07-15 10:46:10,763: INFO: navigated to home page 
-2024-07-15 10:46:11,232: INFO: clicked on profile icon 
-2024-07-15 10:46:13,942: INFO: clicked on logout button 
-2024-07-15 10:46:16,397: INFO: ______________________________________________ 
+2024-07-15 11:59:53,542: INFO: opening Chrome browser 
+2024-07-15 11:59:53,542: INFO: launched the Open Library website  
+2024-07-15 11:59:58,207: INFO: clicked on login button 
+2024-07-15 11:59:58,337: INFO: anan.hosien@gmail.com inserted in email input bar 
+2024-07-15 11:59:58,386: INFO: Anan31 inserted in password input bar 
+2024-07-15 12:00:01,481: INFO: clicked on login button 
+2024-07-15 12:00:01,544: INFO: testing the borrow book function 
+2024-07-15 12:00:01,544: INFO: ########################################### 
+2024-07-15 12:00:02,472: INFO: navigated to home page 
+2024-07-15 12:00:09,606: INFO: clicked on the first borrow button  
+2024-07-15 12:00:12,250: INFO: the book reader was displayed 
+2024-07-15 12:00:13,399: INFO: clicked on profile icon 
+2024-07-15 12:00:14,310: INFO: clicked on logout button 
+2024-07-15 12:00:16,518: INFO: ______________________________________________ 
+2024-07-15 12:03:55,883: INFO: opening Edge browser 
+2024-07-15 12:03:55,883: INFO: launched the Open Library website  
+2024-07-15 12:04:00,948: INFO: clicked on login button 
+2024-07-15 12:04:01,223: INFO: anan.hosien@gmail.com inserted in email input bar 
+2024-07-15 12:04:01,326: INFO: Anan31 inserted in password input bar 
+2024-07-15 12:04:04,811: INFO: clicked on login button 
+2024-07-15 12:04:04,934: INFO: testing the editing of the display name  
+2024-07-15 12:04:04,934: INFO: ########################################### 
+2024-07-15 12:04:05,162: INFO: clicked on profile icon 
+2024-07-15 12:04:06,410: INFO: navigated to my profile page  
+2024-07-15 12:04:08,141: INFO: clicked on edit button 
+2024-07-15 12:04:08,329: INFO: cleared the existent name 
+2024-07-15 12:04:08,428: INFO: khKP inserted instead 
+2024-07-15 12:04:10,032: INFO: clicked on save button 
+2024-07-15 12:04:10,178: INFO: the current name is: khKP 
+2024-07-15 12:04:11,204: INFO: clicked on edit button 
+2024-07-15 12:04:11,277: INFO: cleared the existent name 
+2024-07-15 12:04:11,317: INFO: anan_h inserted instead 
+2024-07-15 12:04:13,022: INFO: clicked on save button 
+2024-07-15 12:04:13,125: INFO: clicked on profile icon 
+2024-07-15 12:04:14,213: INFO: clicked on logout button 
+2024-07-15 12:04:16,375: INFO: ______________________________________________ 
