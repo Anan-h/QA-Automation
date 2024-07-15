@@ -24,22 +24,18 @@ class MainPage(BaseAppPage):
         except NoSuchElementException as e:
             logging.error(e)
 
-    def click_on_borrow_button_by_index(self, index=0):
+    def click_on_first_borrow_button(self):
         """
-        This function clicks on one of the borrow buttons that is shown on the screen,
-        by default it clicks on the first one
-        :param index:index of the desired borrow button to click
+        This function clicks on the first borrow button that is shown on the screen,
         :return:
         """
-        self._borrow_buttons[index].click()
-        logging.info(f"clicked on the borrow button located at the index:{index}")
+        self._borrow_buttons[0].click()
+        logging.info("clicked on the first borrow button ")
 
-    def click_on_book_link_by_index(self, index=0):
+    def click_on_first_book_link(self):
         """
-        This function clicks on one of the book links that is shown on the screen,
-        by default it clicks on the first one
-        :param index:index of the desired book link to click
+        This function clicks on the first book link that is shown on the screen
         :return:
         """
-        self._books_links[index].click()
-        logging.info(f"clicked on the book link located at the index:{index}")
+        self._books_links[0].click()
+        logging.info("clicked on the first book link ")

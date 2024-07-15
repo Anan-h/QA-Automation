@@ -23,7 +23,7 @@ class TestAddingNoteToABook(unittest.TestCase):
         logging.info("testing adding note to a book")
         logging.info("###########################################")
         MyBooksPage(self.driver).navigate_to_home_page()
-        MainPage(self.driver).click_on_book_link_by_index()
+        MainPage(self.driver).click_on_first_book_link()
         BookPage(self.driver).adding_note_flow(Utils.generate_string_of_letters(40))
         self.assertTrue(BookPage(self.driver).confirmation_message_appearance())
         self.driver.save_screenshot('adding note confirmation.png')

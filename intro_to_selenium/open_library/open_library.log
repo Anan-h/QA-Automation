@@ -126,3 +126,68 @@
 2024-07-14 11:09:16,822: INFO: clicked on profile icon 
 2024-07-14 11:09:18,188: INFO: clicked on logout button 
 2024-07-14 11:09:20,669: INFO: ______________________________________________ 
+2024-07-15 09:22:40,402: INFO: opening Edge browser 
+2024-07-15 09:22:40,405: INFO: launched the Open Library website  
+2024-07-15 09:22:47,913: INFO: testing login with invalid email address 
+2024-07-15 09:22:47,915: INFO: ########################################### 
+2024-07-15 09:23:05,524: INFO: clicked on login button 
+2024-07-15 09:23:06,918: INFO: lSEqlq@gmail.com inserted in email input bar 
+2024-07-15 09:23:07,188: INFO: dWZ5SsyfKM inserted in password input bar 
+2024-07-15 09:23:08,908: INFO: clicked on login button 
+2024-07-15 09:23:09,380: INFO: the message content is:No account was found with this email. Please try again 
+2024-07-15 09:23:09,828: INFO: error message was displayed  
+2024-07-15 09:23:14,017: INFO: ______________________________________________ 
+2024-07-15 09:24:25,642: INFO: opening Edge browser 
+2024-07-15 09:24:25,644: INFO: launched the Open Library website  
+2024-07-15 09:24:37,266: INFO: clicked on login button 
+2024-07-15 09:24:37,844: INFO: anan.hosien@gmail.com inserted in email input bar 
+2024-07-15 09:24:38,013: INFO: Anan31 inserted in password input bar 
+2024-07-15 09:24:41,310: INFO: clicked on login button 
+2024-07-15 09:24:41,428: INFO: testing the borrow book function 
+2024-07-15 09:24:41,428: INFO: ########################################### 
+2024-07-15 09:24:42,737: INFO: navigated to home page 
+2024-07-15 09:24:53,965: INFO: clicked on the borrow button located at the index:0 
+2024-07-15 09:24:56,676: INFO: the book reader was displayed 
+2024-07-15 09:25:00,944: INFO: clicked on profile icon 
+2024-07-15 09:25:02,010: INFO: clicked on logout button 
+2024-07-15 09:25:04,498: INFO: ______________________________________________ 
+2024-07-15 09:46:38,256: INFO: opening Chrome browser 
+2024-07-15 09:46:38,256: INFO: launched the Open Library website  
+2024-07-15 09:46:47,396: INFO: clicked on login button 
+2024-07-15 09:46:47,957: INFO: anan.hosien@gmail.com inserted in email input bar 
+2024-07-15 09:46:48,159: INFO: Anan31 inserted in password input bar 
+2024-07-15 09:46:51,836: INFO: clicked on login button 
+2024-07-15 09:46:51,969: INFO: testing the borrow book function 
+2024-07-15 09:46:51,970: INFO: ########################################### 
+2024-07-15 09:46:53,225: INFO: navigated to home page 
+2024-07-15 09:47:02,614: INFO: clicked on the borrow button located at the index:0 
+2024-07-15 09:47:04,231: INFO: the book reader was displayed 
+2024-07-15 09:47:07,890: INFO: clicked on profile icon 
+2024-07-15 09:47:08,971: INFO: clicked on logout button 
+2024-07-15 09:47:11,375: INFO: ______________________________________________ 
+2024-07-15 09:47:25,037: INFO: opening Chrome browser 
+2024-07-15 09:47:25,037: INFO: launched the Open Library website  
+2024-07-15 09:47:33,614: INFO: clicked on login button 
+2024-07-15 09:47:34,547: INFO: anan.hosien@gmail.com inserted in email input bar 
+2024-07-15 09:47:34,832: INFO: Anan31 inserted in password input bar 
+2024-07-15 09:47:37,933: INFO: clicked on login button 
+2024-07-15 09:47:38,080: INFO: testing the borrow book function 
+2024-07-15 09:47:38,081: INFO: ########################################### 
+2024-07-15 09:47:39,145: INFO: navigated to home page 
+2024-07-15 09:47:48,176: INFO: clicked on the borrow button located at the index:0 
+2024-07-15 09:47:49,289: INFO: the book reader was displayed 
+2024-07-15 09:47:54,256: INFO: clicked on profile icon 
+2024-07-15 09:47:55,204: INFO: clicked on logout button 
+2024-07-15 09:47:57,688: INFO: ______________________________________________ 
+2024-07-15 10:45:55,547: INFO: opening Chrome browser 
+2024-07-15 10:45:55,548: INFO: launched the Open Library website  
+2024-07-15 10:46:00,929: INFO: clicked on login button 
+2024-07-15 10:46:01,284: INFO: anan.hosien@gmail.com inserted in email input bar 
+2024-07-15 10:46:01,409: INFO: Anan31 inserted in password input bar 
+2024-07-15 10:46:04,508: INFO: clicked on login button 
+2024-07-15 10:46:04,634: INFO: testing the borrow book function 
+2024-07-15 10:46:04,634: INFO: ########################################### 
+2024-07-15 10:46:10,763: INFO: navigated to home page 
+2024-07-15 10:46:11,232: INFO: clicked on profile icon 
+2024-07-15 10:46:13,942: INFO: clicked on logout button 
+2024-07-15 10:46:16,397: INFO: ______________________________________________ 

@@ -23,7 +23,7 @@ class TestBorrowingBook(unittest.TestCase):
         logging.info("testing the borrow book function")
         logging.info("###########################################")
         MyBooksPage(self.driver).navigate_to_home_page()
-        MainPage(self.driver).click_on_borrow_button_by_index()
+        MainPage(self.driver).click_on_first_borrow_button()
         reader_is_visible = BorrowPage(self.driver).book_reader_is_visible()
         self.assertTrue(reader_is_visible)
 
