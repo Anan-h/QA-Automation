@@ -1,4 +1,4 @@
-from intro_to_selenium.open_library.infra.logging_setup import LoggingSetup
+from intro_to_selenium.open_library.infra.logger import Logger
 
 
 class BasePage:
