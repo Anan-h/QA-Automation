@@ -1,0 +1,7 @@
+{
+  "base_url": "https://deckofcardsapi.com",
+  "count_of_decks": 5,
+  "status": 200,
+  "deck": 52,
+  "not_allowed": 405
+}
