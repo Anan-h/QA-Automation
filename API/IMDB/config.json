@@ -1,0 +1,13 @@
+{
+  "movie_name": "Harry_Potter",
+  "status_code": 200,
+  "invalid_name": "Harry Potter",
+  "good_message": "Success",
+  "bad_message": "TypeError: Cannot read property 'slice' of undefined",
+  "all_popular_movies": 1009,
+  "oscars": 1376,
+  "country": "US",
+  "genre": "Action",
+  "action_us": 140,
+  "tv_action_us": 145
+}

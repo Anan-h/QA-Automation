@@ -1,0 +1,50 @@
+2024-07-16 12:11:45,966: INFO: opening Edge browser 
+2024-07-16 12:11:45,966: INFO: launched the Open Library website  
+2024-07-16 12:11:55,252: INFO: clicked on login button 
+2024-07-16 12:11:55,553: INFO: anan.hosien@gmail.com inserted in email input bar 
+2024-07-16 12:11:55,615: INFO: Anan31 inserted in password input bar 
+2024-07-16 12:11:59,053: INFO: clicked on login button 
+2024-07-16 12:11:59,158: INFO: testing the borrow book function 
+2024-07-16 12:11:59,158: INFO: ########################################### 
+2024-07-16 12:12:00,166: INFO: navigated to home page 
+2024-07-16 12:12:07,898: INFO: clicked on the first borrow button  
+2024-07-16 12:12:10,580: INFO: the book reader was displayed 
+2024-07-16 12:12:13,368: INFO: clicked on profile icon 
+2024-07-16 12:12:14,478: INFO: clicked on logout button 
+2024-07-16 12:12:16,749: INFO: ______________________________________________ 
+2024-07-16 14:09:37,503: INFO: opening Chrome browser 
+2024-07-16 14:09:37,503: INFO: launched the Open Library website  
+2024-07-16 14:09:43,419: INFO: clicked on login button 
+2024-07-16 14:09:43,624: INFO: anan.hosien@gmail.com inserted in email input bar 
+2024-07-16 14:09:43,681: INFO: Anan31 inserted in password input bar 
+2024-07-16 14:09:46,735: INFO: clicked on login button 
+2024-07-16 14:09:46,850: INFO: testing the borrow book function 
+2024-07-16 14:09:46,850: INFO: ########################################### 
+2024-07-16 14:09:47,778: INFO: navigated to home page 
+2024-07-16 14:09:56,821: INFO: clicked on the first borrow button  
+2024-07-16 14:09:58,462: INFO: the book reader was displayed 
+2024-07-16 14:10:02,332: INFO: clicked on profile icon 
+2024-07-16 14:10:03,286: INFO: clicked on logout button 
+2024-07-16 14:10:05,719: INFO: ______________________________________________ 
+2024-07-16 14:10:37,704: INFO: opening Chrome browser 
+2024-07-16 14:10:37,705: INFO: launched the Open Library website  
+2024-07-16 14:10:48,694: INFO: clicked on login button 
+2024-07-16 14:10:48,977: INFO: anan.hosien@gmail.com inserted in email input bar 
+2024-07-16 14:10:49,072: INFO: Anan31 inserted in password input bar 
+2024-07-16 14:10:51,875: INFO: clicked on login button 
+2024-07-16 14:10:51,981: INFO: testing the editing of the display name  
+2024-07-16 14:10:51,982: INFO: ########################################### 
+2024-07-16 14:10:52,168: INFO: clicked on profile icon 
+2024-07-16 14:10:53,723: INFO: navigated to my profile page  
+2024-07-16 14:10:55,440: INFO: clicked on edit button 
+2024-07-16 14:10:55,596: INFO: cleared the existent name 
+2024-07-16 14:10:55,692: INFO: wFif inserted instead 
+2024-07-16 14:10:57,269: INFO: clicked on save button 
+2024-07-16 14:10:57,377: INFO: the current name is: wFif 
+2024-07-16 14:10:58,239: INFO: clicked on edit button 
+2024-07-16 14:10:58,378: INFO: cleared the existent name 
+2024-07-16 14:10:58,475: INFO: anan_h inserted instead 
+2024-07-16 14:10:59,981: INFO: clicked on save button 
+2024-07-16 14:11:00,138: INFO: clicked on profile icon 
+2024-07-16 14:11:00,990: INFO: clicked on logout button 
+2024-07-16 14:11:03,332: INFO: ______________________________________________ 

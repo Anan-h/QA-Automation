@@ -1,10 +1,10 @@
 import unittest
 
-from API.infra.api_wrapper import APIWrapper
-from API.infra.config_provider import ConfigProvider
-from API.logic.back_of_card import BackOfCard
-from API.logic.brand_new_deck import BrandNewDeck
-from API.logic.shuffle_the_cards import ShuffleTheCards
+from API.deck_of_cards.infra.api_wrapper import APIWrapper
+from API.deck_of_cards.infra.config_provider import ConfigProvider
+from API.deck_of_cards.logic.back_of_card import BackOfCard
+from API.deck_of_cards.logic.brand_new_deck import BrandNewDeck
+from API.deck_of_cards.logic.shuffle_the_cards import ShuffleTheCards
 
 
 class TestDeckOfCards(unittest.TestCase):

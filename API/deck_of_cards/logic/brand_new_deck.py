@@ -1,4 +1,4 @@
-from API.infra.api_wrapper import APIWrapper
+from API.deck_of_cards.infra.api_wrapper import APIWrapper
 
 
 class BrandNewDeck:
