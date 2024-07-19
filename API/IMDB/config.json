@@ -4,10 +4,15 @@
   "invalid_name": "Harry Potter",
   "good_message": "Success",
   "bad_message": "TypeError: Cannot read property 'slice' of undefined",
-  "all_popular_movies": 1009,
+  "all_popular_movies": 1008,
+  "all_tv_shows": 1095,
   "oscars": 1376,
   "country": "US",
   "genre": "Action",
   "action_us": 140,
-  "tv_action_us": 145
+  "tv_action_us": 145,
+  "favorite_usa": 50,
+  "day": 12,
+  "month":12,
+  "born_on": 30
 }

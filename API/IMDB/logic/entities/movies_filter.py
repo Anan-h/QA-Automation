@@ -1,6 +1,6 @@
 class MoviesFilter:
 
-    def __init__(self, country, genre):
+    def __init__(self, country, genre=None):
         self.country = country
         self.genre = genre
 
