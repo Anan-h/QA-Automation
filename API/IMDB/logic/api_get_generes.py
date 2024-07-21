@@ -1,3 +1,5 @@
+import logging
+
 from API.IMDB.infra.api_wrapper import APIWrapper
 
 
@@ -14,4 +16,5 @@ class APIGetGenres:
         this function sends a get request, including headers
         :return: list of all genres
         """
+        logging.info("getting all genres")
         return self._request.get_request(self.URL, headers=self.HEADERS)

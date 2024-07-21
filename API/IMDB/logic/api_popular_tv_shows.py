@@ -1,3 +1,5 @@
+import logging
+
 from API.IMDB.infra.api_wrapper import APIWrapper
 from API.IMDB.logic.entities.movies_filter import MoviesFilter
 
@@ -15,6 +17,7 @@ class APIPopularTvShows:
         this function sends a post request, including headers
         :return: list of all popular tv shows worldwide
         """
+        logging.info("getting all popular tv shows")
         return self._request.post_request(self.URL, headers=self.HEADERS)
 
     def get_popular_tv_shows_in_country_by_genre(self, country, genre):
@@ -25,4 +28,5 @@ class APIPopularTvShows:
         :return: list of all popular tv shows in the same country that their genre is the same
         """
         body = MoviesFilter(country, genre).to_dict()
+        logging.info(f"getting all popular {genre} tv shows, in the {country}")
         return self._request.post_request(self.URL, headers=self.HEADERS, body=body)

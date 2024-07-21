@@ -1,3 +1,5 @@
+import logging
+
 from API.IMDB.infra.api_wrapper import APIWrapper
 
 
@@ -14,4 +16,5 @@ class APILanguages:
         this function sends a get request, including headers
         :return: list of all languages
         """
+        logging.info("getting all languages")
         return self._request.get_request(self.URL, headers=self.HEADERS)

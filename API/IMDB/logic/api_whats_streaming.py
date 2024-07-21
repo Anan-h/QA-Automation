@@ -1,3 +1,5 @@
+import logging
+
 from API.IMDB.infra.api_wrapper import APIWrapper
 from API.IMDB.logic.entities.movies_filter import MoviesFilter
 
@@ -18,4 +20,5 @@ class APIWhatsStreaming:
         """
         country = MoviesFilter(country).country
         full_url = f"{self.URL}{country}"
+        logging.info(f"getting what's streaming in: {country}")
         return self._request.get_request(full_url, headers=self.HEADERS)

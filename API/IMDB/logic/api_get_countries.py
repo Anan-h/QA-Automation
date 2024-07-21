@@ -1,3 +1,5 @@
+import logging
+
 from API.IMDB.infra.api_wrapper import APIWrapper
 
 
@@ -14,4 +16,5 @@ class APIGetCountries:
         this function sends a get request ,including headers
         :return: a list of all countries
         """
+        logging.info("getting all countries")
         return self._request.get_request(self.URL, headers=self.HEADERS)

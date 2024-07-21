@@ -1,3 +1,5 @@
+import logging
+
 from API.IMDB.infra.api_wrapper import APIWrapper
 from API.IMDB.logic.entities.date import Date
 
@@ -19,4 +21,7 @@ class APIBornOn:
         """
         date = Date(day, month).__str__()
         full_url = f"{self.URL}{date}"
+        logging.info(f"getting actors that born on: {date} ")
         return self._request.get_request(full_url, headers=self.HEADERS)
+
+

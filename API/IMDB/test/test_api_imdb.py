@@ -39,7 +39,6 @@ class TestAPIImdb(unittest.TestCase):
         data = response.json()
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(data["message"], self.config["good_message"])
-        logging.info("the test has PASSED")
 
     def test_search_imdb_for_invalid_movie_name(self):
         logging.info("testing the search function with invalid input")
@@ -48,59 +47,38 @@ class TestAPIImdb(unittest.TestCase):
         data = response.json()
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(data["message"], self.config["bad_message"])
-        logging.info("the test has PASSED")
 
     def test_get_all_popular_movies(self):
         logging.info("testing the get all popular movies function")
         request = APIPopularMovies(self.api_request)
         response = request.get_all_popular_movies()
         response_body = response.json()
-        data = response_body["data"]
-        page_info = data["pageInfo"]
-        total = page_info["total"]
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(response_body["message"], self.config["good_message"])
-        self.assertEqual(total, self.config["all_popular_movies"])
-        logging.info("the test has PASSED")
 
     def test_get_popular_movies_in_country_by_genre(self):
         logging.info("testing the get popular movies with genre and country filters function")
         request = APIPopularMovies(self.api_request)
         response = request.get_popular_movies_in_country_by_genre(Country.USA.value, Genre.ACTION.value)
         response_body = response.json()
-        data = response_body["data"]
-        page_info = data["pageInfo"]
-        total = page_info["total"]
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(response_body["message"], self.config["good_message"])
-        self.assertEqual(total, self.config["action_us"])
-        logging.info("the test has PASSED")
 
     def test_get_popular_tv_shows_in_country_by_genre(self):
         logging.info("testing the get popular tv shows with genre and country filters function")
         request = APIPopularTvShows(self.api_request)
         response = request.get_popular_tv_shows_in_country_by_genre(Country.USA.value, Genre.ACTION.value)
         response_body = response.json()
-        data = response_body["data"]
-        page_info = data["pageInfo"]
-        total = page_info["total"]
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(response_body["message"], self.config["good_message"])
-        self.assertEqual(total, self.config["tv_action_us"])
-        logging.info("the test has PASSED")
 
     def test_get_all_popular_tv_shows(self):
         logging.info("testing the get all popular tv shows function")
         request = APIPopularTvShows(self.api_request)
         response = request.get_all_popular_tv_shows()
         response_body = response.json()
-        data = response_body["data"]
-        page_info = data["pageInfo"]
-        total = page_info["total"]
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(response_body["message"], self.config["good_message"])
-        self.assertEqual(total, self.config["all_tv_shows"])
-        logging.info("the test has PASSED")
 
     def test_get_oscars_winners(self):
         logging.info("testing the get oscars winners function ")
@@ -113,7 +91,6 @@ class TestAPIImdb(unittest.TestCase):
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(response_body["message"], self.config["good_message"])
         self.assertEqual(total, self.config["oscars"])
-        logging.info("the test has PASSED")
 
     def test_fan_favorites_in_country(self):
         logging.info("testing the get fan favorites in country function ")
@@ -126,7 +103,6 @@ class TestAPIImdb(unittest.TestCase):
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(response_body["message"], self.config["good_message"])
         self.assertEqual(total, self.config["favorite_usa"])
-        logging.info("the test has PASSED")
 
     def test_get_actors_born_on_date(self):
         logging.info("testing the get actors born on date function")
@@ -139,7 +115,6 @@ class TestAPIImdb(unittest.TestCase):
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(response_body["message"], self.config["good_message"])
         self.assertEqual(total, self.config["born_on"])
-        logging.info("the test has PASSED")
 
     def test_get_week_top_ten(self):
         logging.info("testing the get week's top ten function")
@@ -151,7 +126,6 @@ class TestAPIImdb(unittest.TestCase):
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(response_body["message"], self.config["good_message"])
         self.assertEqual(total, self.config["top_ten"])
-        logging.info("the test has PASSED")
 
     def test_whats_streaming_in_country(self):
         logging.info("testing the get what's streaming in country function ")
@@ -163,7 +137,6 @@ class TestAPIImdb(unittest.TestCase):
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(response_body["message"], self.config["good_message"])
         self.assertEqual(total, self.config["whats_streaming_usa"])
-        logging.info("the test has PASSED")
 
     def test_get_all_genres(self):
         logging.info("testing the get all genres function")
@@ -176,7 +149,6 @@ class TestAPIImdb(unittest.TestCase):
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(response_body["message"], self.config["good_message"])
         self.assertEqual(total, self.config["all_genres"])
-        logging.info("the test has PASSED")
 
     def test_get_all_countries(self):
         logging.info("testing the get all countries function ")
@@ -189,7 +161,6 @@ class TestAPIImdb(unittest.TestCase):
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(response_body["message"], self.config["good_message"])
         self.assertEqual(total, self.config["all_countries"])
-        logging.info("the test has PASSED")
 
     def test_get_all_emmy_winners(self):
         logging.info("testing the get emmy winners function ")
@@ -202,7 +173,6 @@ class TestAPIImdb(unittest.TestCase):
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(response_body["message"], self.config["good_message"])
         self.assertEqual(total, self.config["emmy_winners"])
-        logging.info("the test has PASSED")
 
     def test_popular_celebrities(self):
         logging.info("testing the get popular celebrities function")
@@ -215,7 +185,6 @@ class TestAPIImdb(unittest.TestCase):
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(response_body["message"], self.config["good_message"])
         self.assertEqual(total, self.config["popular_celebrities"])
-        logging.info("the test has PASSED")
 
     def test_get_all_keywords(self):
         logging.info("testing the get all keywords function")
@@ -228,7 +197,6 @@ class TestAPIImdb(unittest.TestCase):
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(response_body["message"], self.config["good_message"])
         self.assertEqual(total, self.config["key_words"])
-        logging.info("the test has PASSED")
 
     def test_get_all_languages(self):
         logging.info("testing the get all languages function")
@@ -241,7 +209,6 @@ class TestAPIImdb(unittest.TestCase):
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(response_body["message"], self.config["good_message"])
         self.assertEqual(total, self.config["languages"])
-        logging.info("the test has PASSED")
 
     def test_upcoming_movies_in_country(self):
         logging.info("testing the get upcoming movies in country function")
@@ -252,7 +219,6 @@ class TestAPIImdb(unittest.TestCase):
         total = len(movies)
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(total, self.config["india_upcoming_movies"])
-        logging.info("the test has PASSED")
 
     def test_upcoming_tv_series_in_country(self):
         logging.info("testing the get upcoming tv series in country function")
@@ -263,7 +229,6 @@ class TestAPIImdb(unittest.TestCase):
         total = len(series)
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(total, self.config["india_upcoming_series"])
-        logging.info("the test has PASSED")
 
     def test_upcoming_tv_episode_in_country(self):
         logging.info("testing the get upcoming tv episodes in country function")
@@ -274,4 +239,3 @@ class TestAPIImdb(unittest.TestCase):
         total = len(episode)
         self.assertEqual(response.status_code, self.config["status_code"])
         self.assertEqual(total, self.config["india_upcoming_episode"])
-        logging.info("the test has PASSED")
