@@ -11,6 +11,12 @@ class APIBornOn:
         self._request = request
 
     def get_actors_born_on_date(self, day, month):
+        """
+        this function sends a get request to url with day and month as params ,including headers
+        :param day: specific day
+        :param month: specific month
+        :return: list of actors that born on the same date
+        """
         date = Date(day, month).__str__()
         full_url = f"{self.URL}{date}"
         return self._request.get_request(full_url, headers=self.HEADERS)

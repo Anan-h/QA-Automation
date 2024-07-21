@@ -1,0 +1,60 @@
+2024-07-21 11:59:59,655: INFO: testing the get fan favorites in country function  
+2024-07-21 12:00:01,878: INFO: the test has PASSED 
+2024-07-21 12:00:01,878: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:01,879: INFO: testing the get actors born on date function 
+2024-07-21 12:00:03,185: INFO: the test has PASSED 
+2024-07-21 12:00:03,186: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:03,186: INFO: testing the get all countries function  
+2024-07-21 12:00:03,843: INFO: the test has PASSED 
+2024-07-21 12:00:03,843: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:03,844: INFO: testing the get emmy winners function  
+2024-07-21 12:00:04,954: INFO: the test has PASSED 
+2024-07-21 12:00:04,956: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:04,956: INFO: testing the get all genres function 
+2024-07-21 12:00:05,629: INFO: the test has PASSED 
+2024-07-21 12:00:05,630: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:05,630: INFO: testing the get all keywords function 
+2024-07-21 12:00:06,299: INFO: the test has PASSED 
+2024-07-21 12:00:06,299: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:06,300: INFO: testing the get all languages function 
+2024-07-21 12:00:06,911: INFO: the test has PASSED 
+2024-07-21 12:00:06,911: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:06,912: INFO: testing the get all popular movies function 
+2024-07-21 12:00:07,981: INFO: the test has PASSED 
+2024-07-21 12:00:07,982: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:07,982: INFO: testing the get all popular tv shows function 
+2024-07-21 12:00:09,049: INFO: the test has PASSED 
+2024-07-21 12:00:09,050: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:09,051: INFO: testing the get oscars winners function  
+2024-07-21 12:00:10,870: INFO: the test has PASSED 
+2024-07-21 12:00:10,871: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:10,872: INFO: testing the get popular movies with genre and country filters function 
+2024-07-21 12:00:12,106: INFO: the test has PASSED 
+2024-07-21 12:00:12,107: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:12,108: INFO: testing the get popular tv shows with genre and country filters function 
+2024-07-21 12:00:13,199: INFO: the test has PASSED 
+2024-07-21 12:00:13,200: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:13,201: INFO: testing the get week's top ten function 
+2024-07-21 12:00:14,037: INFO: the test has PASSED 
+2024-07-21 12:00:14,038: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:14,040: INFO: testing the get popular celebrities function 
+2024-07-21 12:00:15,348: INFO: the test has PASSED 
+2024-07-21 12:00:15,349: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:15,351: INFO: testing the search function with invalid input 
+2024-07-21 12:00:16,064: INFO: the test has PASSED 
+2024-07-21 12:00:16,064: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:16,064: INFO: testing the search function with valid input  
+2024-07-21 12:00:16,748: INFO: the test has PASSED 
+2024-07-21 12:00:16,748: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:16,750: INFO: testing the get upcoming movies in country function 
+2024-07-21 12:00:19,139: INFO: the test has PASSED 
+2024-07-21 12:00:19,139: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:19,140: INFO: testing the get upcoming tv episodes in country function 
+2024-07-21 12:00:20,755: INFO: the test has PASSED 
+2024-07-21 12:00:20,756: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:20,757: INFO: testing the get upcoming tv series in country function 
+2024-07-21 12:00:22,479: INFO: the test has PASSED 
+2024-07-21 12:00:22,480: INFO: ----------------------------------------------------------------- 
+2024-07-21 12:00:22,481: INFO: testing the get what's streaming in country function  
+2024-07-21 12:00:25,953: INFO: the test has PASSED 
+2024-07-21 12:00:25,954: INFO: ----------------------------------------------------------------- 

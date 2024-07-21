@@ -11,19 +11,11 @@ class APISearchImdb:
     def __init__(self, request: APIWrapper):
         self._request = request
 
-    def get_search_imdb(self):
-        """
-        this function sends a GET request to IMDB server to search
-        :return:
-        """
-        full_url = f"{self.BASE_URL}{self.SEARCH_URL}"
-        return self._request.get_request(full_url, headers=self.HEADERS)
-
     def get_search_imdb_for_text(self, text):
         """
-        this function sends a GET request to IMDB server to search for a text
+        this function sends a GET request ,including headers and text as param
         :param text: the search input
-        :return:
+        :return:list of results for the search input
         """
         full_url = f"{self.BASE_URL}{self.SPECIFIC_SEARCH}{text}"
         return self._request.get_request(full_url, headers=self.HEADERS)

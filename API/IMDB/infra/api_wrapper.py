@@ -1,4 +1,7 @@
+import logging
+
 import requests
+from API.IMDB.infra.logger import Logger
 
 
 class APIWrapper:
