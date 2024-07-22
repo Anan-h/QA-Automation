@@ -2,7 +2,6 @@ import logging
 from requests import RequestException
 from API.IMDB.infra.api_wrapper import APIWrapper
 from API.IMDB.infra.config_provider import ConfigProvider
-from API.IMDB.infra.response_wrapper import ResponseWrapper
 
 
 class APIEmmyWinners:
@@ -20,8 +19,7 @@ class APIEmmyWinners:
         try:
             logging.info("getting all emmy winners")
             full_url = f"{self.config['base_url']}{self.END_POINT}"
-            response = self._request.get_request(full_url, headers=self.config["headers"])
-            return ResponseWrapper(ok=response.ok, status=response.status_code, data=response.json())
+            return self._request.get_request(full_url, headers=self.config["headers"])
         except RequestException as e:
             logging.error(e)
 

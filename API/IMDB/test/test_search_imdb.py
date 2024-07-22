@@ -17,11 +17,13 @@ class TestSearchIMDB(unittest.TestCase):
     def test_search_imdb_for_valid_movie_name(self):
         logging.info("testing the search function with valid input ")
         response = self.request.get_search_imdb_for_text(self.config["movie_name"])
+        self.assertTrue(response.ok)
         self.assertEqual(response.status, self.config["status_code"])
         self.assertEqual(response.data["message"], self.config["good_message"])
 
     def test_search_imdb_for_invalid_movie_name(self):
         logging.info("testing the search function with invalid input")
         response = self.request.get_search_imdb_for_text(self.config["invalid_name"])
+        self.assertTrue(response.ok)
         self.assertEqual(response.status, self.config["status_code"])
         self.assertEqual(response.data["message"], self.config["bad_message"])

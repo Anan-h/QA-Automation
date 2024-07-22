@@ -2,7 +2,6 @@ import logging
 from requests import RequestException
 from API.IMDB.infra.api_wrapper import APIWrapper
 from API.IMDB.infra.config_provider import ConfigProvider
-from API.IMDB.infra.response_wrapper import ResponseWrapper
 from API.IMDB.logic.entities.movies_filter import MoviesFilter
 
 
@@ -23,7 +22,6 @@ class APIUpcomingTvEpisode:
             country = MoviesFilter(country).country
             full_url = f"{self.config["base_url"]}{self.END_POINT}{country}"
             logging.info(f"getting upcoming tv episodes in: {country}")
-            response = self._request.get_request(full_url, headers=self.config["headers"])
-            return ResponseWrapper(ok=response.ok, status=response.status_code, data=response.json())
+            return self._request.get_request(full_url, headers=self.config["headers"])
         except RequestException as e:
             logging.error(e)

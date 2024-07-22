@@ -181,3 +181,111 @@
 2024-07-22 12:57:21,644: INFO: testing the get what's streaming in country function  
 2024-07-22 12:57:21,644: INFO: getting what's streaming in: US 
 2024-07-22 12:57:26,134: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:34:39,882: INFO: testing the get actors born on date function 
+2024-07-22 17:34:39,883: INFO: getting actors that born on: month=12&day=12  
+2024-07-22 17:34:45,981: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:44:10,429: INFO: testing the get fan favorites in country function  
+2024-07-22 17:44:10,430: INFO: getting fan favorites in: US 
+2024-07-22 17:44:13,801: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:44:13,802: INFO: testing the get actors born on date function 
+2024-07-22 17:44:13,803: INFO: getting actors that born on: month=12&day=12  
+2024-07-22 17:44:15,209: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:44:15,210: INFO: testing the get all countries function  
+2024-07-22 17:44:15,210: INFO: getting all countries 
+2024-07-22 17:44:17,942: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:44:17,943: INFO: testing the get emmy winners function  
+2024-07-22 17:44:17,944: INFO: getting all emmy winners 
+2024-07-22 17:44:19,853: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:44:19,855: INFO: testing the get all genres function 
+2024-07-22 17:44:19,855: INFO: getting all genres 
+2024-07-22 17:44:20,445: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:44:20,446: INFO: testing the get all keywords function 
+2024-07-22 17:44:20,446: INFO: getting all keywords 
+2024-07-22 17:44:21,050: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:44:21,051: INFO: testing the get all languages function 
+2024-07-22 17:44:21,052: INFO: getting all languages 
+2024-07-22 17:44:21,644: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:44:21,645: INFO: testing the get oscars winners function  
+2024-07-22 17:44:21,645: INFO: getting all oscars winners 
+2024-07-22 17:44:23,558: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:44:23,560: INFO: testing the get week's top ten function 
+2024-07-22 17:44:23,560: INFO: getting the week's top ten 
+2024-07-22 17:44:24,566: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:44:24,566: INFO: testing the get popular celebrities function 
+2024-07-22 17:44:24,566: INFO: getting all popular celebrities 
+2024-07-22 17:44:28,373: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:44:28,375: INFO: testing the get upcoming movies in country function 
+2024-07-22 17:44:28,375: INFO: getting upcoming movies in: IN 
+2024-07-22 17:44:31,229: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:44:31,230: INFO: testing the get upcoming tv episodes in country function 
+2024-07-22 17:44:31,231: INFO: getting upcoming tv episodes in: IN 
+2024-07-22 17:44:37,543: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:44:37,543: INFO: testing the get upcoming tv series in country function 
+2024-07-22 17:44:37,544: INFO: getting upcoming tv series in: IN 
+2024-07-22 17:44:42,048: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:44:42,049: INFO: testing the get what's streaming in country function  
+2024-07-22 17:44:42,049: INFO: getting what's streaming in: US 
+2024-07-22 17:44:50,532: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:49:53,767: INFO: testing the get upcoming movies in country function 
+2024-07-22 17:49:53,768: INFO: getting upcoming movies in: IN 
+2024-07-22 17:49:56,255: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:51:37,436: INFO: testing the get fan favorites in country function  
+2024-07-22 17:51:37,438: INFO: getting fan favorites in: US 
+2024-07-22 17:51:42,771: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:51:42,772: INFO: testing the get actors born on date function 
+2024-07-22 17:51:42,772: INFO: getting actors that born on: month=12&day=12  
+2024-07-22 17:51:50,244: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:51:50,245: INFO: testing the get all countries function  
+2024-07-22 17:51:50,246: INFO: getting all countries 
+2024-07-22 17:51:50,865: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:51:50,867: INFO: testing the get emmy winners function  
+2024-07-22 17:51:50,867: INFO: getting all emmy winners 
+2024-07-22 17:51:55,920: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:51:55,922: INFO: testing the get all genres function 
+2024-07-22 17:51:55,922: INFO: getting all genres 
+2024-07-22 17:51:57,661: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:51:57,662: INFO: testing the get all keywords function 
+2024-07-22 17:51:57,663: INFO: getting all keywords 
+2024-07-22 17:51:58,248: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:51:58,249: INFO: testing the get all languages function 
+2024-07-22 17:51:58,250: INFO: getting all languages 
+2024-07-22 17:51:58,854: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:51:58,855: INFO: testing the get oscars winners function  
+2024-07-22 17:51:58,855: INFO: getting all oscars winners 
+2024-07-22 17:52:01,214: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:52:01,215: INFO: testing the get week's top ten function 
+2024-07-22 17:52:01,215: INFO: getting the week's top ten 
+2024-07-22 17:52:07,758: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:52:07,759: INFO: testing the get popular celebrities function 
+2024-07-22 17:52:07,759: INFO: getting all popular celebrities 
+2024-07-22 17:52:09,597: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:52:09,598: INFO: testing the get upcoming movies in country function 
+2024-07-22 17:52:09,598: INFO: getting upcoming movies in: IN 
+2024-07-22 17:52:12,515: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:52:12,515: INFO: testing the get upcoming tv episodes in country function 
+2024-07-22 17:52:12,516: INFO: getting upcoming tv episodes in: IN 
+2024-07-22 17:52:16,440: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:52:16,441: INFO: testing the get upcoming tv series in country function 
+2024-07-22 17:52:16,441: INFO: getting upcoming tv series in: IN 
+2024-07-22 17:52:18,383: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:52:18,384: INFO: testing the get what's streaming in country function  
+2024-07-22 17:52:18,384: INFO: getting what's streaming in: US 
+2024-07-22 17:52:25,499: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:52:56,758: INFO: testing the get all popular movies function 
+2024-07-22 17:52:56,759: INFO: getting all popular movies 
+2024-07-22 17:53:01,921: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:53:01,922: INFO: testing the get popular movies with genre and country filters function 
+2024-07-22 17:53:01,922: INFO: getting all popular Action movies in the US 
+2024-07-22 17:53:04,470: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:53:13,423: INFO: testing the get all popular tv shows function 
+2024-07-22 17:53:13,424: INFO: getting all popular tv shows 
+2024-07-22 17:53:18,988: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:53:18,989: INFO: testing the get popular tv shows with genre and country filters function 
+2024-07-22 17:53:18,989: INFO: getting all popular Action tv shows, in the US 
+2024-07-22 17:53:22,552: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:53:29,525: INFO: testing the search function with invalid input 
+2024-07-22 17:53:29,525: INFO: searching for: Harry Potter 
+2024-07-22 17:53:30,794: INFO: ----------------------------------------------------------------- 
+2024-07-22 17:53:30,795: INFO: testing the search function with valid input  
+2024-07-22 17:53:30,795: INFO: searching for: Harry_Potter 
+2024-07-22 17:53:31,648: INFO: ----------------------------------------------------------------- 
