@@ -1,4 +1,4 @@
-class Date:
+class BirthDate:
 
     def __init__(self, day, month):
         self.day = day

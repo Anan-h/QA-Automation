@@ -1,20 +1,26 @@
 import logging
-
+from requests import RequestException
 from API.IMDB.infra.api_wrapper import APIWrapper
+from API.IMDB.infra.config_provider import ConfigProvider
+from API.IMDB.infra.response_wrapper import ResponseWrapper
 
 
 class APIGetGenres:
-    URL = "https://imdb188.p.rapidapi.com/api/v1/getGenres"
-    HEADERS = {"x-rapidapi-host": "imdb188.p.rapidapi.com",
-               "x-rapidapi-key": "23bdb40c39mshf54e59983cc594fp14cb41jsnd33cf0964b97"}
+    END_POINT = "/getGenres"
 
     def __init__(self, request: APIWrapper):
         self._request = request
+        self.config = ConfigProvider().load_from_file('../config.json')
 
     def get_all_genres(self):
         """
         this function sends a get request, including headers
         :return: list of all genres
         """
-        logging.info("getting all genres")
-        return self._request.get_request(self.URL, headers=self.HEADERS)
+        try:
+            logging.info("getting all genres")
+            full_url = f"{self.config['base_url']}{self.END_POINT}"
+            response = self._request.get_request(full_url, headers=self.config["headers"])
+            return ResponseWrapper(ok=response.ok, status=response.status_code, data=response.json())
+        except RequestException as e:
+            logging.error(e)
