@@ -26,5 +26,9 @@ class TestPopularMovies(unittest.TestCase):
     def test_get_popular_movies_in_country_by_genre(self):
         logging.info("testing the get popular movies with genre and country filters function")
         response = self.request.get_popular_movies_in_country_by_genre(Country.USA.value, Genre.ACTION.value)
+        d = response.data["data"]
+        page_info = d["pageInfo"]
+        total = page_info["total"]
         self.assertEqual(response.status, self.config["status_code"])
         self.assertEqual(response.data["message"], self.config["good_message"])
+        self.assertIsNotNone(total)

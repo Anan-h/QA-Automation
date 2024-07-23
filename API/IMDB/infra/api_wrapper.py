@@ -1,9 +1,4 @@
-import logging
-
 import requests
-
-from API.IMDB.infra.config_provider import ConfigProvider
-from API.IMDB.infra.logger import Logger
 from API.IMDB.infra.response_wrapper import ResponseWrapper
 
 
@@ -11,7 +6,6 @@ class APIWrapper:
 
     def __init__(self):
         self._request = None
-        self.config = ConfigProvider().load_from_file('../config.json')
 
     @staticmethod
     def get_request(url, body=None, headers=None):
