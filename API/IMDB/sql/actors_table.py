@@ -8,7 +8,7 @@ class ActorsTable(ImdbDataBase):
         super().__init__()
         self.api_request = APIWrapper()
         self.request = APIBornOn(self.api_request)
-        self.response = self.request.get_actors_born_on_date(12, 12)
+        self.response = self.request.get_actors_born_on_date(3, 5)
 
     def create_table(self):
         self.cur.execute("""CREATE TABLE IF NOT EXISTS actors
