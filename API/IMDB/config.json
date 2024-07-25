@@ -1,4 +1,7 @@
 {
+  "jira_url": "https://ananhusein.atlassian.net/",
+  "project_key": "KAN",
+  "email": "anan.hosien@gmail.com",
   "base_url": "https://imdb188.p.rapidapi.com/api/v1",
   "headers": {"x-rapidapi-host": "imdb188.p.rapidapi.com",
                "x-rapidapi-key": "23bdb40c39mshf54e59983cc594fp14cb41jsnd33cf0964b97"},

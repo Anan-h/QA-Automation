@@ -9,7 +9,7 @@ class APIKeywords:
 
     def __init__(self, request: APIWrapper):
         self._request = request
-        self.config = ConfigProvider().load_from_file('../config.json')
+        self.config = ConfigProvider().load_from_file('C:\\Users\\ananh\\OneDrive\\Desktop\\QA Course\\Automation\\Automation_GIT\\API\\IMDB\\config.json')
 
     def get_all_keywords(self):
         """

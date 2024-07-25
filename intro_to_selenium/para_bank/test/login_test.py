@@ -1,5 +1,4 @@
-import datetime
-import time
+
 import unittest
 from intro_to_selenium.para_bank.infra.config_provider import ConfigProvider
 from intro_to_selenium.para_bank.infra.browser_wrapper import BrowserWrapper

@@ -9,7 +9,7 @@ from API.IMDB.logic.enum.genre import Genre
 
 class TestPopularTvShows(unittest.TestCase):
     def setUp(self):
-        self.config = ConfigProvider().load_from_file('../config.json')
+        self.config = ConfigProvider().load_from_file('C:\\Users\\ananh\\OneDrive\\Desktop\\QA Course\\Automation\\Automation_GIT\\API\\IMDB\\config.json')
         self.api_request = APIWrapper()
         self.request = APIPopularTvShows(self.api_request)
 
