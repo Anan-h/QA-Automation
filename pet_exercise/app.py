@@ -105,6 +105,7 @@ def add_pet():
             owner.add_pet(pet)
             pets.append(pet)
             save_pets()
+            save_owners()
         return redirect(url_for('list_pets'))
     return render_template('add_pet.html', owners=owners)
 

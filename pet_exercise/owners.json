@@ -1,2 +1,2 @@
-[{"name": "Anan", "phone_number": "0528769420", "pets": ["Rex"]},
-  {"name": "Tzahi", "phone_number": "0501234567", "pets": []}]
+[{"name": "Anan", "phone_number": "0528769420", "pets": ["Rex", "Woof", "snow"]},
+  {"name": "Tzahi", "phone_number": "0501234567", "pets": ["Kitty", "meow", "white"]}]
