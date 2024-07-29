@@ -16,9 +16,8 @@ class FileHandler(contextlib.ContextDecorator):
         except Exception as e:
             raise FileProcessingError(f"Error: {str(e)}")
 
-    def __exit__(self, exc_type, exc_val, exc_tb):
+    def __exit__(self, exception_type, exception_value, exc_tb):
         if self.file:
             self.file.close()
-            print(f"File {self.file_path} has been closed.")
-        if exc_type:
-            raise FileProcessingError(f"Error: {str(exc_val)}")
+        if exception_type:
+            raise FileProcessingError(f"Error: {str(exception_value)}")

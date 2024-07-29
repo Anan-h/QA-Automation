@@ -23,7 +23,6 @@ class TestFileProcessor(unittest.TestCase):
     @patch('builtins.open', new_callable=mock_open, read_data='Hello, World!')
     def test_read_from_file(self, mock_file):
         content = f"File Content: Hello, World!"
-
         result = self.processor.read_from_file(self.config['file_path'])
 
         # tests that open was called with the correct file path and mode

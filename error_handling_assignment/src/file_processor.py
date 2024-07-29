@@ -11,8 +11,6 @@ class FileProcessor:
             return f"File Content: {content}"
         except FileProcessingError as e:
             print(e.message)
-        finally:
-            print("Finished attempting to read the file.")
 
     @staticmethod
     def write_in_file(file_path, content):
@@ -23,5 +21,4 @@ class FileProcessor:
             print(e.message)
         else:
             print(f"Successfully wrote to the file {file_path}.")
-        finally:
-            print("Finished attempting to write to the file.")
+
