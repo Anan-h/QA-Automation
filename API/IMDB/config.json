@@ -1,6 +1,6 @@
 {
   "jira_url": "https://ananhusein.atlassian.net/",
-  "project_key": "KAN",
+  "project_key": "ASMW",
   "email": "anan.hosien@gmail.com",
   "base_url": "https://imdb188.p.rapidapi.com/api/v1",
   "headers": {"x-rapidapi-host": "imdb188.p.rapidapi.com",

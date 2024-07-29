@@ -2,6 +2,7 @@
 import json
 from book import Book
 
+
 class Library:
 
     def __init__(self, file_path):
@@ -9,7 +10,7 @@ class Library:
         self.file_path = file_path
         self.load_library()
 
-    def add_book(self,book):
+    def add_book(self, book):
         self.books.append(book)
         self.save_library()
 
@@ -19,7 +20,6 @@ class Library:
             self.save_library()
         except IndexError:
             print("Invalid book index")
-
 
     def list_books(self):
         return [book.display() for book in self.books]

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Pet</title>
+    <script>
+        function updateForm() {
+            var species = document.getElementById('species').value;
+            var breedField = document.getElementById('breedField');
+            var indoorField = document.getElementById('indoorField');
+
+            if (species === 'Dog') {
+                breedField.style.display = 'block';
+                indoorField.style.display = 'none';
+            } else if (species === 'Cat') {
+                breedField.style.display = 'none';
+                indoorField.style.display = 'block';
+            } else {
+                breedField.style.display = 'none';
+                indoorField.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Add a New Pet</h1>
+    <form method="post">
+        Name: <input type="text" name="name" required><br>
+        Age: <input type="number" name="age" min="1" max="15" required><br>
+        Species:
+        <select id="species" name="species" onchange="updateForm()" required>
+            <option value="">Select a species</option>
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+        </select><br>
+        Owner:
+        <select name="owner" required>
+            {% for owner in owners %}
+                <option value="{{ owner.name }}">{{ owner.name }}</option>
+            {% endfor %}
+        </select><br>
+        <div id="breedField" style="display:none;">
+            Breed:
+            <select name="breed">
+                <option value="">Select a breed</option>
+                <option value="Bulldog">Bulldog</option>
+                <option value="German Shepherd">German Shepherd</option>
+                <option value="Beagle">Beagle</option>
+                <option value="Poodle">Poodle</option>
+            </select><br>
+        </div>
+        <div id="indoorField" style="display:none;">
+            Indoor: <input type="checkbox" name="indoor"><br>
+        </div>
+        <input type="submit" value="Add Pet">
+    </form>
+</body>
+</html>

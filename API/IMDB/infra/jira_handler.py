@@ -20,6 +20,6 @@ class JiraHandler:
             'project': {'key': project_key},
             'summary': summary,
             'description': description,
-            'issue_type': issue_type
+            'issuetype': issue_type
         }
         return self._auth_jira.create_issue(fields=issue_dict)

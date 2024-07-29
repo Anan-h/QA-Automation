@@ -1,23 +1,23 @@
 #the app class
-from flask import Flask, render_template, request, redirect, url_for, jsonify
+from flask import Flask, render_template, request, redirect, url_for
 from library import Library
 from book import Book
+
+
 class App:
     app = Flask(__name__)
-
-
 
     @staticmethod
     @app.route('/')
     def index():
-        return render_template('index.html')
+        return render_template('pets.html')
 
     @staticmethod
     @app.route('/books')
     def list_books():
         library = Library('library.json')
         books = library.list_books()
-        return render_template('book_list.html', books=books)
+        return render_template('owners.html', books=books)
 
     @staticmethod
     @app.route('/add', methods=['GET', 'POST'])
@@ -31,8 +31,7 @@ class App:
             library = Library('library.json')
             library.add_book(new_book)  # Pass the Book object to add_book method
             return redirect(url_for('list_books'))
-        return render_template('add_book.html')
-
+        return render_template('add_pet.html')
 
     @staticmethod
     @app.route('/edit/<int:index>', methods=['GET', 'POST'])
@@ -46,8 +45,7 @@ class App:
             library.edit_book(index, title, author, year, genre)
             return redirect(url_for('list_books'))
         book = library.books[index].display()
-        return render_template('edit_book.html', index=index, book=book)
-
+        return render_template('add_owner.html', index=index, book=book)
 
     @staticmethod
     @app.route('/delete/<int:index>', methods=['POST'])
@@ -62,6 +60,3 @@ class App:
         library = Library('library.json')
         library.list_book(index)
         return redirect(url_for('list_books'))
-
-
-
