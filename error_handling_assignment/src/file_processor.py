@@ -4,7 +4,7 @@ from error_handling_assignment.src.file_processing_error import FileProcessingEr
 
 class FileProcessor:
     @staticmethod
-    def read_file(file_path):
+    def read_from_file(file_path):
         try:
             with FileHandler(file_path, 'r') as file:
                 content = file.read()
@@ -15,7 +15,7 @@ class FileProcessor:
             print("Finished attempting to read the file.")
 
     @staticmethod
-    def write_file(file_path, content):
+    def write_in_file(file_path, content):
         try:
             with FileHandler(file_path, 'w') as file:
                 file.write(content)

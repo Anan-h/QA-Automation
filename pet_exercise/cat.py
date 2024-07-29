@@ -33,5 +33,5 @@ class Cat(Pet):
 
     def __str__(self):
         owner_name = self.owner
-        indoor = self.is_living_indoor()
-        return f"{self.name} (Cat:{self.age} years old, Owner: {owner_name} )"
+        vaccinated = self.pet_is_vaccinated()
+        return f"{self.name} (Cat:{self.age} years old, Owner: {owner_name}, {vaccinated} )"

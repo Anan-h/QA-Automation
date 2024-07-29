@@ -54,6 +54,7 @@ def add_pet():
             elif species == 'Cat':
                 indoor = request.form.get('indoor') == 'on'
                 pet = Cat(name, age, owner, indoor)
+
             owner.add_pet(pet)
             pets.append(pet)
         return redirect(url_for('list_pets'))

@@ -11,9 +11,9 @@ class FileProcessingSystem:
 
         if operation.lower() == "write":
             content = input("Enter the content to write to the file: ")
-            self.processor.write_file(file_path, content)
+            self.processor.write_in_file(file_path, content)
         elif operation.lower() == "read":
-            content = self.processor.read_file(file_path)
+            content = self.processor.read_from_file(file_path)
             if content:
                 print(content)
         else:
