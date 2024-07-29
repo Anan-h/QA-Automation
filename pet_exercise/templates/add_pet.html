@@ -7,6 +7,8 @@
             var species = document.getElementById('species').value;
             var breedField = document.getElementById('breedField');
             var indoorField = document.getElementById('indoorField');
+            var vaccinatedField = document.getElementById('vaccinatedField');
+            var servicesField = document.getElementById('servicesField');
 
             if (species === 'Dog') {
                 breedField.style.display = 'block';
@@ -17,6 +19,24 @@
             } else {
                 breedField.style.display = 'none';
                 indoorField.style.display = 'none';
+            }
+
+            // Update services field visibility based on vaccination status
+            var vaccinatedCheckbox = document.getElementById('vaccinated');
+            if (vaccinatedCheckbox.checked) {
+                servicesField.style.display = 'block';
+            } else {
+                servicesField.style.display = 'none';
+            }
+        }
+
+        function toggleServicesField() {
+            var vaccinatedCheckbox = document.getElementById('vaccinated');
+            var servicesField = document.getElementById('servicesField');
+            if (vaccinatedCheckbox.checked) {
+                servicesField.style.display = 'block';
+            } else {
+                servicesField.style.display = 'none';
             }
         }
     </script>
@@ -49,7 +69,19 @@
             </select><br>
         </div>
         <div id="indoorField" style="display:none;">
-            Indoor: <input type="checkbox" name="indoor"><br>
+            Indoor: <input type="checkbox" name="indoor">
+        </div>
+        <div id="vaccinatedField">
+            Vaccinated: <input type="checkbox" id="vaccinated" name="vaccinated" onchange="toggleServicesField()">
+        </div>
+        <div id="servicesField" style="display:none;">
+            Service:
+            <select name="service">
+                <option value="">Select a service</option>
+                <option value="Grooming">Grooming</option>
+                <option value="Shower">Shower</option>
+                <option value="Walking">Walking</option>
+            </select>
         </div>
         <input type="submit" value="Add Pet">
     </form>

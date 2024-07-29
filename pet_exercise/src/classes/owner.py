@@ -1,7 +1,8 @@
+import json
 from typing import List, TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from pet_exercise.pet import Pet
+    from pet_exercise.src.classes.pet import Pet
 
 
 class Owner:
@@ -52,5 +53,17 @@ class Owner:
             print(e)
 
     def __str__(self):
-        pets_str = ', '.join([str(pet) for pet in self._pets])
-        return f"{self.name}: {pets_str}"
+        pets_str = ' ,'.join([str(pet) for pet in self._pets])
+        return f"{self.name}:{pets_str}"
+
+    def to_dict(self):
+        return {
+            'name': self.name,
+            'phone_number': self.phone_number,
+            'pets': [pet.name for pet in self._pets]
+        }
+
+    @classmethod
+    def from_dict(cls, data):
+        return cls(data['name'], data['phone_number'])
+

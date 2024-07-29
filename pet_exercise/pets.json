@@ -1,0 +1,1 @@
+[{"name": "Rex", "age": 4, "owner_name": "Anan", "vaccinated": true, "species": "Dog", "breed": "Bulldog"}, {"name": "Kitty", "age": 2, "owner_name": "Tzahi", "vaccinated": true, "species": "Cat", "indoor": true}, {"name": "Woof", "age": 4, "owner_name": "Anan", "vaccinated": true, "species": "Dog", "breed": "Beagle"}]

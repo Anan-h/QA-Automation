@@ -1,16 +1,16 @@
-from pet_exercise.owner import Owner
+import json
+
+from pet_exercise.src.classes.owner import Owner
 
 
 class Pet:
-    total_pets = 0
 
-    def __init__(self, name: str, age: int, species, owner: Owner):
+    def __init__(self, name: str, age: int, species, owner: Owner, vaccinated):
         self.name = name
         self.age = age
         self.species = species
         self.owner = owner
-        self._vaccinated = False
-        self.total_pets += 1
+        self.vaccinated = vaccinated
 
     @property
     def name(self):
@@ -45,6 +45,17 @@ class Pet:
         except TypeError as e:
             print(e)
 
+    @property
+    def vaccinated(self):
+        return self._vaccinated
+
+    @vaccinated.setter
+    def vaccinated(self, vaccinated: bool):
+        try:
+            self._vaccinated = vaccinated
+        except TypeError as e:
+            print(e)
+
     def pet_is_vaccinated(self):
         if self._vaccinated:
             return "the pet is vaccinated"
@@ -55,7 +66,7 @@ class Pet:
         if self._vaccinated:
             return "the pet is already vaccinated"
         else:
-            self._vaccinated = True
+            self.vaccinated = True
 
     @property
     def species(self):
@@ -71,10 +82,6 @@ class Pet:
     def get_pet_age_in_human_years(self):
         return f"this pet is: {self._age * 7} years old, in human years"
 
-    @classmethod
-    def total_pets_count(cls):
-        return cls.total_pets
-
     def __eq__(self, other):
         if isinstance(other, Pet):
             return self.name == other.name and self.species == other.species
@@ -82,4 +89,18 @@ class Pet:
 
     def __str__(self):
         owner_name = self.owner.name
-        return f"{self.name} ({self.species}, {self.age} years old, Owner: {owner_name})"
+        vaccinated = self.pet_is_vaccinated()
+        return f"{self.name} ({self.species}, {self.age} years old, Owner: {owner_name}.{vaccinated})"
+
+    def to_dict(self):
+        return {
+            'name': self.name,
+            'age': self.age,
+            'owner_name': self.owner.name,
+            'vaccinated': self.vaccinated,
+            'species': self.species
+        }
+
+    @classmethod
+    def from_dict(cls, data, owner):
+        pass
